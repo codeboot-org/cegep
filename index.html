@@ -1,23 +1,282 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>codeBoot dans les CEGEPs</title>
+  <title>codeBoot / CEGEP</title>
   <style>
     body {
-        font-size: 20px;
+      --cb-header-color: #016bb6;
+      --cb-header-height: 3em;
+      margin: 0;
+      padding-top: 4.5em;
+      font-size: 24px;
+    }
+
+    header {
+      height: var(--cb-header-height);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--cb-header-color);
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 36px;
+      transition: box-shadow 0.3s;
+    }
+
+    header > img {
+      position: fixed;
+      top: 0.75em;
+      left: 1.25em;
+      width: 2em;
+    }
+
+    header.shadow {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .content {
+      padding: 20px;
+      margin-bottom: var(--cb-header-height);
+    }
+
+    img {
+        width: 150px;
     }
   </style>
+  <script>
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('header');
+      var scrollPosition = window.scrollY || window.pageYOffset;
+      var pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollPosition > 0) {
+        header.classList.add('shadow');
+      } else {
+        header.classList.remove('shadow');
+      }
+    });
+  </script>
 </head>
-
 <body>
+  <header>
+    <b>codeBoot : un outil pour débutants</b>
+    <img src="assets/codeboot-org.png"></img>
+  </header>
+  <div class="content">
 
+<p>En développement depuis 2013, l'environnement de programmation <a href="https://codeboot.org/">codeBoot</a> a été conçu pour l'enseignement de la programmation aux débutants. Il met l'emphase sur l'apprentissage des concepts de programmation afin que les étudiants puissent être efficaces quels que soient les langages de programmation qu'ils devront utiliser par la suite.</p>
 
-<center><h3>codeBoot : un outil adapté à l'enseignement de la programmation dans les CEGEPs</h3></center>
+<p>codeBoot est présentement utilisé avec succès au <a href="https://diro.umontreal.ca">DIRO</a> de l'Université de Montréal pour le cours Programmation 1, le cours d'introduction à la programmation du programme de Baccalauréat en informatique. À cause de son orientation vers les débutants, nous croyons que codeBoot est parfaitement adapté pour les cours d'informatique offerts par les CEGEPs et tout particulièrement le nouveau cours 420‐SN1‐RE du programme Sciences de la nature 200.B1 du Ministère de l'Enseignement supérieur visant la compétence <i>«Développer des programmes informatiques en vue d’automatiser la résolution de problèmes dans un contexte scientifique.»</i></p>
 
-<p>...</p>
+<p>Plusieurs des développements récents de codeBoot facilitent son utilisation dans le contexte d'enseignement collégial, notamment :</p>
 
+<ul>
+
+  <li>Tableur intégré à codeBoot pour visionner et éditer des données en format CSV.
+  <li>Module d'affichage permettant de créer facilement des graphiques à partir de matrices ou de données CSV.
+  <li>Interface à des senseurs sans-fils «BLINX» pour recueillir des données expérimentales pour des programmes de nature scientifique et des projets intégrateurs.
+  <li>Création d'interface utilisateur et d'application Web par les étudiants et qui sont utilisables sur ordinateurs de bureau, tablettes et téléphones intelligents sans installation requise.
+  <li>Fonctionnalités pour aider l'enseignant à créer des documents pédagogiques et notes de cours qui permettent d'exécuter en un clic les exemples de codage, comme c'est le cas sur la page Web présente. Pour plus d'information sur cette fonctionnalité veuillez consulter la page <a href="https://codeboot-org.github.io/presentations">«codeBoot : un outil pour enseignants».</a>
+
+</ul>
+
+<p>L'environnement codeBoot est accessible en ligne gratuitement à l'adresse <a href="https://codeboot.org/">https://codeboot.org/</a>. Aucune installation ou équipement particulier n'est requis. L'environnement est utilisable sur ordinateurs de bureau, ordinateurs portables et tablettes.</p>
+
+<p>Une interface utilisateur puissante et épurée permet d'éviter la complexité des outils de développement professionnels et permet de privilégier l'apprentissage des concepts de programmation. D'autre part la langue est configurable pour que les menus, messages d'erreur et la documentation intégrée soient en anglais ou français selon le choix de l'étudiant.</p>
+
+<p>Pour mieux comprendre les attraits de codeBoot nous avons préparé des exemples d'utilisation qui couvrent plusieurs situations rencontrées dans des cours de programmation.</p>
+
+<p>Chaque exemple ci-dessous vient avec une image illustrative. Veuillez simplement <b>cliquer sur l'image pour exécuter l'exemple et voir son code source</b>.
+
+<hr>
+
+<h3>1. Expliquer la séquence des opérations effectuées par la machine</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.e1"><img src="assets/decompte.png" style="vertical-align:middle"></img></a>
+</td><td>
+Utiliser la console pour afficher un décompte pour illustrer le fonctionnement des boucles <code>while</code>.<br><br>Dans codeBoot cliquez sur le bouton «Exécuter le prochain pas» pour avancer l'exécution d'un pas et indiquer le résultat des calculs.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.e35"><img src="assets/decompte_step35.png" style="vertical-align:middle"></img></a>
+</td><td>
+L'exécution pas-à-pas peut aussi débuter à un numéro de pas spécifique.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.a35"><img src="assets/decompte_step35.png" style="vertical-align:middle"></img></a>
+</td><td>
+L'exécution pas-à-pas peut aussi être animée automatiquement et optionnellement s'arrêter à un numéro de pas spécifique.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdHJpLWJ1bGxlLnB5~XQAAgABfBAAAAAAAAAARiASo2atBSWIi9FfrXeRW3FOQUNmpghns7Az8Drkihr9cdxdWZ2Au_RNWClWFzg-bV5PC2Z2y8l2wXRiV0IhSGj8GLBWQF4gOxczEV0yLbqXQEfyXVtIKEuTWqvqxai91eDlQ-wI40vUpBbQwL6xpIuqXsalsPLY7HXvjILoYoFpME8qH4GmDcAn5BDo8XYPUyMthxUaOr1hOE6JdmvG1MWR4AGbsjRTpkyrknj68Wgozjs4bh-UwKsYoHrL0JZ_VxbX8KbeoCkitmH4eeNM4K30-Xdr3RsG6Hk580iw8MlXicwhS6qYj3Ld__d1BDSpF6uAvOlyGRqZj9exgj6a_qgMjTJUlhzUkEYeyro90AZ5ArSmZmY-8-28_D2hRvFrX3E-escunuglWPL8awH15QpsZnAGvGwQNXmetWqUaAKgCnU5RaW8Yi1OgCFHOwsME7HtDy7YOAACMzYQK-o0oEbWVUSpn9R5KDz1ccD1m4PIdxdIf_x5dnm--aXD_AK4leYAZ1a6tuEInWOQ-b7vaxFhsVlVQeViPmhypBbT4csQ0ujbeiTdYOkayyYqvEgfhsmztv9RFEmc2vzmNT55lj_D9co5EBGt6AwbPCQa66RWJA7S_GvGNHT1lsS4nb8DylCjUieU9iiZ3p9wQ5O_sCcnXwPN2O6ZP_l0CfYtCNdpePvypJKkqMsglsuyLqhLg1MDhXupAkUQ-GwWq1bAsrKvDEH1n_vd-ERM=.~lang=py-novice.e"><img src="assets/tri_bulle.png" style="vertical-align:middle"></img></a>
+</td><td>
+L'utilisation de la fonction <code>sleep(délai)</code> et <code>breakpoint()</code> permettent d'expliquer les programmes plus complexes, par exemple un «tri bulle».<br><br>Dans codeBoot tapez la touche «Enter» pour continuer l'exécution après un appel à <code>breakpoint()</code> ou le bouton «Exécuter le prochain pas» pour avancer d'un seul pas d'exécution.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdHJpLWJ1bGxlLnB5~XQAAgABgBAAAAAAAAAARiASo2atBSWIi9FfrXeRW3FOQUNmpghns7Az8Drkihr9cdxdWZ2Au_RNWClWFzg-bV5PC2Z2y8l2wXRiV0IhSGj8GLBWQF4gOxczEV0yLbqXQEfyXVtIKEuTWqvqxai91eDlQ-wI40vUpBbQwL6xpIuqXsalsPLY7HXvjILoYoFpME8qH4GmDcAn5BDo8XYPUyMthxUaOr1hOE6JdmvG1MWR4AGbsjRTpkyrknj68Wgozjs4bh-UwKsYoHrL0JZ_VxbX8KbeoCkitmH4eeNM4K30-Xdr3RsG6Hk580iw8MlXicwhS6qYj3Ld__d1BDSpF6uAvOlyGRqZj9exgj6a_qgMjTJUlhzUkEYeyro90AZ5ArSmZmY-8-28_D2hRvFrX3E-escunuglWPL8awH15QpsZnAGvGwQNXmetWqUaAKgCnU5RaW8Yi1OgCFHOwsME7HtDy7YOAACMzYQK-o0oEbWVUSpn9R5KDz1KA2Ysvc-TjEaCuE4iuCNp7_ER86elUs5l7yV2iISerz3RQIguNgZaRTN5hFfIpceHlljqqeFQ6207gar9JL4XOW6LRiWa9xl28Zdbkmflkw4AoH-ofWxlaAeZxTPX2uCRA6FtlUP_05C-px1SrgmTEi0dvxze8uOSsvxB0XIsTHj2o5meGgQHhx2DiurzLtCJjLitTh5TJKCiUEq26BKU7ffjnFYex3gEA89oCjQvKOJzeO5PDZhlgK5Z_3sFgwA=.~lang=py-novice.~hidden=true.e"><img src="assets/tri_bulle_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Comme l'exemple précédent mais en tant qu'application Web et sans appel à <code>breakpoint()</code>.
+</td></tr></table>
+
+<hr>
+
+<h3>2. Interaction textuelle simple avec l'utilisateur</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fYm9uam91ci5weQ==~XQAAgAAzAAAAAAAAAAAwmwjUg2VS92Xhnf4TKcZ_V1CwmoO1RxpBNEf_c8xIb1_2c70QE9icXCt4bqnc4_F31OqSab__wXQAAA==.~lang=py-novice.e"><img src="assets/bonjour.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui demande le nom de l'utilisateur puis le salue.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fYm9uam91ci5weQ==~XQAAgAAzAAAAAAAAAAAwmwjUg2VS92Xhnf4TKcZ_V1CwmoO1RxpBNEf_c8xIb1_2c70QE9icXCt4bqnc4_F31OqSab__wXQAAA==.~lang=py-novice.~hidden=true.e"><img src="assets/bonjour_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Comme l'exemple précédent mais en tant qu'application Web.
+</td></tr></table>
+
+<hr>
+
+<h3>3. Interface utilisateur qui réagit aux clics de souris</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fZGVzLnB5~XQAAgABDAgAAAAAAAAARiAcomZM8lCcg7PiXAPNQTmx04gnRMqwuGRJAlNV-t2mkmrXAhUlzpp0DF0lEQmPOmOe9SAlHQcRjj1O6SOG7g3evjYBB01HxX-3IWwjbxVRS5Z27k4-Fff5Q6bKp0ZzMzMpoWhLDal1sn1POKhftU_V8-KVIKadwDSO52bm5vjXFO8yDdbyyNhKr_w29KbZoa9dPsGQY6LJPG2eNTnxNAAiNjIRjgJLnTNAtsU8rYyXtbLbY8FN3LHGhCopEYoYrpNMhxnTcGbcGg219ScqerQSji5jWXM_WTpsx-n1Nvjn60PM_h3k9CBBxt8SJSAKWD5ivPItRBLZa2TU2EcG-0NE4HVz-fKVOCDgGZiS30T3JRkowedk44Z9y5wcYtXDvWYV7UoWBGvCJaXbuJJ58_XtGvWU-RbaFI7bNdjsCj7mgWEWO7QOEXEKyOz6B0WAVem5s9N2HkvTy9wx3Fd9Sf8NTZbT6CAsqOy_IQDJ45pIA3geN_h5xycsRTXgQneyGEHx9dRLHw1e6ryMFg_-m-L2A.~lang=py-novice.e"><img src="assets/des.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui simule le lancé de 2 dés à jouer lorsqu'un bouton est cliqué.<br><br>Cet exemple illustre l'accès au DOM du navigateur et aussi le mode «flottant» de codeBoot qui facilite le déboggage d'interface utilisateur.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fZGVzLnB5~XQAAgABDAgAAAAAAAAARiAcomZM8lCcg7PiXAPNQTmx04gnRMqwuGRJAlNV-t2mkmrXAhUlzpp0DF0lEQmPOmOe9SAlHQcRjj1O6SOG7g3evjYBB01HxX-3IWwjbxVRS5Z27k4-Fff5Q6bKp0ZzMzMpoWhLDal1sn1POKhftU_V8-KVIKadwDSO52bm5vjXFO8yDdbyyNhKr_w29KbZoa9dPsGQY6LJPG2eNTnxNAAiNjIRjgJLnTNAtsU8rYyXtbLbY8FN3LHGhCopEYoYrpNMhxnTcGbcGg219ScqerQSji5jWXM_WTpsx-n1Nvjn60PM_h3k9CBBxt8SJSAKWD5ivPItRBLZa2TU2EcG-0NE4HVz-fKVOCDgGZiS30T3JRkowedk44Z9y5wcYtXDvWYV7UoWBGvCJaXbuJJ58_XtGvWU-RbaFI7bNdjsCj7mgWEWO7QOEXEKyOz6B0WAVem5s9N2HkvTy9wx3Fd9Sf8NTZbT6CAsqOy_IQDJ45pIA3geN_h5xycsRTXgQneyGEHx9dRLHw1e6ryMFg_-m-L2A.~lang=py-novice.~hidden=true.e"><img src="assets/des_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Comme l'exemple précédent mais en tant qu'application Web.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdGljLXRhYy10b2UucHk=~XQAAgAB1EAAAAAAAAAARiAXIAjDWxtRekiDuvy2KXH4wW7Uqzg4BPaI8n5rABAIUnN89iAX0n87RKoT6AULutMBgWgEc1W6nw0rBvGarLHhxVK-byJqKbDXFIx-DjL7HY2ROkBnaVY65MY6laNsWmllj7rTyFHUmtETC4DQTXxR0_N9r2I-MXmZvdLkNpclFaULvP54kScJ3WfwCOMB4uDrCVgCdZ_CXBfDYmS_184l0a-9OJ0kLX37rBJ0Y4H2Nwv7pJPnM5xpZ5rJ8XSxGovc53Q7XtWcSPnOHEm9wbKTfKOCEdH7xcRa1A0BnBgyXvqx5DlH5O0adiI3M6hTPWy84zFr2bnC9UqMMFioF7K51D0TwliFV05LvymTkUr3ykGvF0VCsdabz2aXXpUIOt8UoDioq_v4qZL3wc3hj_2XQh7ckwdl2KvwBdu-ikhOB05MubOTcKmFaHESxwhLfTQqAUU6bMe7pVf0KPiFCHxgXJPV7CgahkGo-_RWTaBKapHLikF09Opc2xSILd9Hr8XA_KaP4dXrsHrr0yQiq5gAgiguw1Zu4cGhp_rSAR04-WWWdAeFZAekR7NY-RtDXnhvfaDdtnow2gYYCXACWCiQmBQAostGae8LclkK1dV0D02Ijo9j-IO2iVNuVcarXf49eN_bLLUfrVgLOoXC-yIMEfYRa54WIyimNqxqE8V-Nb1Gy546NVkthNg4B7ty7H5cZiNds_HwFtDvY3K60geUIcrgfThSuSODtFfqMRnoYNCqU3qwW8i24MsxHp2uqdqYTV-RaasruV9hJ-NNMPDq2lIZShw3djSizo5keBKBRFspa1FRHFJWTq6le4g7uAExKNir--Mdd8XW6FWKeWAfiXEfoXLY2BNkX99iYuJEIhlRFaPUBJS74rRlm0ByfsGKYhYvFEQjmp92PlXrPZ1q6a2M9aRuinCKql99Kv2u_641yWwhVunyzY2_p9FQijmWoBSFoOVyKNwjy6XLjYtRZJ5MUr8ajXd76XCQFsc0R8AeoIhaBwhe44VKp1dKfvBSDUl-xEVGcWLL7krg-Bk8bsmTZgX_eazzQs1BEWgpigKis-5d83v1yew--Ua5h00DyyWoo67Xg7ek2nyMxzlM0ZI9pljWJ8Yy5dbR7qvlne26GKQb00ALBhABuopDHqColHK-psTgoV1c2bB9W8T48axHX9pcyLzfVQyFjlhNwDoYAm98OaWv9IsIlYLg63OCQ46jkFZjFZnS19NMRJY5_d5I1C3eS5Nv1mfUaNO9VHgS-JTl0ImLU9s2_EJXJq7N595DUVgjFu5r5GZeH4Wx2bpcK-MZa5OgV6Lrj2jCLGn-Nb8780KwIIgBebTFc2p7d6yWOFMpgSq2fvWcEN4wzmATqe_3Oy_83sOOwBrCVGG-HPl6HbFJC6rrrEDXRKC7_gY6aymbQOYolrSEwq79bsHq0hIVcrmyN-f9zngKZpGmlygWKORe7YC9GhaHTLM8crKlZQSv4pErJ4KTNqlL7meJ4ZxZyNcp6nHqagDyMtANqjASXCB_SnF2urwpfH9IFpViVmi02dTngBP7e4lP_uqLLOuirNWlmw4ZCnjRfVZq0SrEdDWXFIwCJ3mwpCS6mUTnZlo8kWBpBEFBagPiTljiErC-9nHByvK3RiW28ITn4F3-r1Kzm_mbL3fgFssa4PihTJ_u6hLGfNaPPXUdtg1MW2LrGyw8eY_rjGTHHgVItsAnot-yYl6IRvfRFLO4QNwvQrSYLr6ixgUcj5pSXkwJIuxXpFYPtE8lAif_7LG5C.~lang=py-novice.e"><img src="assets/tic_tac_toe.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme de tic-tac-toe avec des boutons et une grille de cases cliquables. Le jeu se joue dans le «terrain de jeu» accessible par la variable <code>playground</code>.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdGljLXRhYy10b2UucHk=~XQAAgAB1EAAAAAAAAAARiAXIAjDWxtRekiDuvy2KXH4wW7Uqzg4BPaI8n5rABAIUnN89iAX0n87RKoT6AULutMBgWgEc1W6nw0rBvGarLHhxVK-byJqKbDXFIx-DjL7HY2ROkBnaVY65MY6laNsWmllj7rTyFHUmtETC4DQTXxR0_N9r2I-MXmZvdLkNpclFaULvP54kScJ3WfwCOMB4uDrCVgCdZ_CXBfDYmS_184l0a-9OJ0kLX37rBJ0Y4H2Nwv7pJPnM5xpZ5rJ8XSxGovc53Q7XtWcSPnOHEm9wbKTfKOCEdH7xcRa1A0BnBgyXvqx5DlH5O0adiI3M6hTPWy84zFr2bnC9UqMMFioF7K51D0TwliFV05LvymTkUr3ykGvF0VCsdabz2aXXpUIOt8UoDioq_v4qZL3wc3hj_2XQh7ckwdl2KvwBdu-ikhOB05MubOTcKmFaHESxwhLfTQqAUU6bMe7pVf0KPiFCHxgXJPV7CgahkGo-_RWTaBKapHLikF09Opc2xSILd9Hr8XA_KaP4dXrsHrr0yQiq5gAgiguw1Zu4cGhp_rSAR04-WWWdAeFZAekR7NY-RtDXnhvfaDdtnow2gYYCXACWCiQmBQAostGae8LclkK1dV0D02Ijo9j-IO2iVNuVcarXf49eN_bLLUfrVgLOoXC-yIMEfYRa54WIyimNqxqE8V-Nb1Gy546NVkthNg4B7ty7H5cZiNds_HwFtDvY3K60geUIcrgfThSuSODtFfqMRnoYNCqU3qwW8i24MsxHp2uqdqYTV-RaasruV9hJ-NNMPDq2lIZShw3djSizo5keBKBRFspa1FRHFJWTq6le4g7uAExKNir--Mdd8XW6FWKeWAfiXEfoXLY2BNkX99iYuJEIhlRFaPUBJS74rRlm0ByfsGKYhYvFEQjmp92PlXrPZ1q6a2M9aRuinCKql99Kv2u_641yWwhVunyzY2_p9FQijmWoBSFoOVyKNwjy6XLjYtRZJ5MUr8ajXd76XCQFsc0R8AeoIhaBwhe44VKp1dKfvBSDUl-xEVGcWLL7krg-Bk8bsmTZgX_eazzQs1BEWgpigKis-5d83v1yew--Ua5h00DyyWoo67Xg7ek2nyMxzlM0ZI9pljWJ8Yy5dbR7qvlne26GKQb00ALBhABuopDHqColHK-psTgoV1c2bB9W8T48axHX9pcyLzfVQyFjlhNwDoYAm98OaWv9IsIlYLg63OCQ46jkFZjFZnS19NMRJY5_d5I1C3eS5Nv1mfUaNO9VHgS-JTl0ImLU9s2_EJXJq7N595DUVgjFu5r5GZeH4Wx2bpcK-MZa5OgV6Lrj2jCLGn-Nb8780KwIIgBebTFc2p7d6yWOFMpgSq2fvWcEN4wzmATqe_3Oy_83sOOwBrCVGG-HPl6HbFJC6rrrEDXRKC7_gY6aymbQOYolrSEwq79bsHq0hIVcrmyN-f9zngKZpGmlygWKORe7YC9GhaHTLM8crKlZQSv4pErJ4KTNqlL7meJ4ZxZyNcp6nHqagDyMtANqjASXCB_SnF2urwpfH9IFpViVmi02dTngBP7e4lP_uqLLOuirNWlmw4ZCnjRfVZq0SrEdDWXFIwCJ3mwpCS6mUTnZlo8kWBpBEFBagPiTljiErC-9nHByvK3RiW28ITn4F3-r1Kzm_mbL3fgFssa4PihTJ_u6hLGfNaPPXUdtg1MW2LrGyw8eY_rjGTHHgVItsAnot-yYl6IRvfRFLO4QNwvQrSYLr6ixgUcj5pSXkwJIuxXpFYPtE8lAif_7LG5C.~lang=py-novice.~hidden=true.e"><img src="assets/tic_tac_toe_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Comme l'exemple précédent mais en tant qu'application Web.
+</td></tr></table>
+
+<hr>
+
+<h3>4. Afficher des fonctions et données sous forme graphique</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fbmV3dG9uLnB5~XQAAgAB1AgAAAAAAAAAyGUj_T013u4h3Qiioq_rDWeleoFxzIxSmgzUitBw8ep77h_od3hgPvKdacS11JycVaVKvgUsgDhklhoZ_c69swMEXSztWQS8-ysdyECCrdxbU9FyYzOLKAX81eJbDhisHexh2Nhs12d0jzEm3nUNaRS-U1QwtKw5yFnVMPfEFgfqy7WhBGWrhy0PpvdPyZE6gHCpbU8q9h1mbu9TszrBIJgDsnjp9YWtQNRYT2Ybo9q4Q3cGMOBxbjpTwtqavkPV1OoU9mjT-Ljan9IQx89KiGGgfzHk7Wy2ajRpATT-Wn-9dGTP5mzDTVcXhOGS0AYZM8MhlDwDTwBpFEt2ijlA9M1q1Y10CR8KWea8w4FtWzKUMD-majtdtqK6z5pfqWV3YaSmtJeH-x3y0mFFDq6H_BY8LMjmQgWz09NZTUUOYoxMnBn3jrF42rRPEaqJgK-Lxlb3ok0HMTXGm__y9pVGiQKieUmyQU2v_96f2HQ==.~lang=py-novice.e"><img src="assets/newton.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui calcule des racines avec la méthode de Newton et qui affiche les fonctions <code>x**(1/2)</code>, <code>x**(1/3)</code> et <code>x**(1/4)</code>.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fbmV3dG9uLnB5~XQAAgAB1AgAAAAAAAAAyGUj_T013u4h3Qiioq_rDWeleoFxzIxSmgzUitBw8ep77h_od3hgPvKdacS11JycVaVKvgUsgDhklhoZ_c69swMEXSztWQS8-ysdyECCrdxbU9FyYzOLKAX81eJbDhisHexh2Nhs12d0jzEm3nUNaRS-U1QwtKw5yFnVMPfEFgfqy7WhBGWrhy0PpvdPyZE6gHCpbU8q9h1mbu9TszrBIJgDsnjp9YWtQNRYT2Ybo9q4Q3cGMOBxbjpTwtqavkPV1OoU9mjT-Ljan9IQx89KiGGgfzHk7Wy2ajRpATT-Wn-9dGTP5mzDTVcXhOGS0AYZM8MhlDwDTwBpFEt2ijlA9M1q1Y10CR8KWea8w4FtWzKUMD-majtdtqK6z5pfqWV3YaSmtJeH-x3y0mFFDq6H_BY8LMjmQgWz09NZTUUOYoxMnBn3jrF42rRPEaqJgK-Lxlb3ok0HMTXGm__y9pVGiQKieUmyQU2v_96f2HQ==.~lang=py-novice.~hidden=true.e"><img src="assets/newton_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Le programme précédent sous forme d'application Web.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdGVtcGVyYXR1cmVzLnB5~XQAAgAAtAQAAAAAAAAARiAYH8Z3t6tI0NxfnqVYjnr_OTwCiTT5ox1xbKuM1DFhRRYwnlksaeqvzN-i6lIC-AkMjgotZvX2_eeK6tsQRe8b0G1YlFS5IHDAnz9YmoDq40El_LFueJg5XbOqK-Ln3oaQd3RIHcPEqZVUf1DXiMiomD0y5N3kqltZ3SG477WDngJyneBotFF-JS9-7WF7B_dNA2oLJROtp3iMCZnRnfux6zlbRwsxwAgIZ-wMc-m5XuQzBvKbjUrPAZ7BRF8ZGF91oGGb9fGcVRPdMYrwGKJzVQN3USU-OYmX8vkykcmKQt3AUUcdgXh0Tl_-egYWA.~lang=py-novice.e"><img src="assets/temperatures.png" style="vertical-align:middle"></img></a>
+</td><td>
+Lecture et affichage graphique des températures quotidiennes moyennes à Montréal entre 1995 et 2010 en format CSV provenant d'un dépot github.<br><br>Cet exemple illustre les fonctions <code>read_file(source)</code> et <code>chart(données_CSV)</code>.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fdGVtcGVyYXR1cmVzLnB5~XQAAgAAtAQAAAAAAAAARiAYH8Z3t6tI0NxfnqVYjnr_OTwCiTT5ox1xbKuM1DFhRRYwnlksaeqvzN-i6lIC-AkMjgotZvX2_eeK6tsQRe8b0G1YlFS5IHDAnz9YmoDq40El_LFueJg5XbOqK-Ln3oaQd3RIHcPEqZVUf1DXiMiomD0y5N3kqltZ3SG477WDngJyneBotFF-JS9-7WF7B_dNA2oLJROtp3iMCZnRnfux6zlbRwsxwAgIZ-wMc-m5XuQzBvKbjUrPAZ7BRF8ZGF91oGGb9fGcVRPdMYrwGKJzVQN3USU-OYmX8vkykcmKQt3AUUcdgXh0Tl_-egYWA.~lang=py-novice.~hidden=true.e"><img src="assets/temperatures_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Le programme précédent sous forme d'application Web.
+</td></tr></table>
+
+<hr>
+
+<h3>5. Dessiner une image sous la forme d'une grille de pixels</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.FZGVtb19waXhlbHMucHk=~XQAAgADoAgAAAAAAAAA7GUqsHfXrWjaPoyr47CcTbIR0QPbm5Z5pDZnqj5htr93KFDfjLwcClGIYHIS6ZYuiIYVGGlwijDvI6sMKSNSkKe3bUpzPMa3rK7JCq13Mpx-6wRlhm1-IFG0Hg9LUdHN8-kF9Aa7OkBszbFunDz0JwWScwUODFX2bunXA2MPaQt79PLzrbYfly4y20JHS8AwG4h1YlR4tu52uaaFPtuC_E_nvuCm4wVI_m8Htudedrs9eS_FllIvBB1XqMJcVnMf4jB4YfngDfEECiWYGiIOgoV_LN1Ae4o27ZwsV4aynpwRbDJrpWon6MvkdKRBttw9qUmEK1TMyh8PFmq9l79wNG6k8m0b95337MxEElfCi-dNnZCt0LXHa9amYwTGf54o1e6zZX_sVGCS4wX6YA2opkkBOQMowRA423x83_qa3G6KuFCXNj-3ZvZnRLHty3sIcDs4yw22DtM_kg6a-qXk2d9otnzCjoXnhjDlaoiL_StqEzfhLEK1EpNWNytgTnCBmhMLMzD8WisaFVwrthaqgG9yOlw8L04RDR1I9-rIMtNmFM427P__KKlO6.ocGx1cy5wbmc=~XQAAgAAeAwAAAAAAAAARmaxhYIGMwZDiniryfHc2IRL4g-XX7n-P8rC7A___NyEAAA==.~lang=py-novice.e"><img src="assets/demo_pixels.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui dessine une image à l'écran dans codeBoot.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.FZGVtb19waXhlbHMucHk=~XQAAgADoAgAAAAAAAAA7GUqsHfXrWjaPoyr47CcTbIR0QPbm5Z5pDZnqj5htr93KFDfjLwcClGIYHIS6ZYuiIYVGGlwijDvI6sMKSNSkKe3bUpzPMa3rK7JCq13Mpx-6wRlhm1-IFG0Hg9LUdHN8-kF9Aa7OkBszbFunDz0JwWScwUODFX2bunXA2MPaQt79PLzrbYfly4y20JHS8AwG4h1YlR4tu52uaaFPtuC_E_nvuCm4wVI_m8Htudedrs9eS_FllIvBB1XqMJcVnMf4jB4YfngDfEECiWYGiIOgoV_LN1Ae4o27ZwsV4aynpwRbDJrpWon6MvkdKRBttw9qUmEK1TMyh8PFmq9l79wNG6k8m0b95337MxEElfCi-dNnZCt0LXHa9amYwTGf54o1e6zZX_sVGCS4wX6YA2opkkBOQMowRA423x83_qa3G6KuFCXNj-3ZvZnRLHty3sIcDs4yw22DtM_kg6a-qXk2d9otnzCjoXnhjDlaoiL_StqEzfhLEK1EpNWNytgTnCBmhMLMzD8WisaFVwrthaqgG9yOlw8L04RDR1I9-rIMtNmFM427P__KKlO6.ocGx1cy5wbmc=~XQAAgAAeAwAAAAAAAAARmaxhYIGMwZDiniryfHc2IRL4g-XX7n-P8rC7A___NyEAAA==.~lang=py-novice.~hidden=true.e"><img src="assets/demo_pixels_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Application Web qui dessine une image à l'écran.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fbGlmZS5weQ==~XQAAgABqBwAAAAAAAAARiAbn-eBeVIw041n8WaUad-brVmSGBXKBxv4FRLBfOtpmqCd96Aa7dUkZflCXPAfmURl6Ge_yx-OZ91ORKH7nCk_YRCEocw-K9x6uiCg3gz1AnVG66myAPVAHvezF2jYwCJ4mjkmb-x82hetYeH_otbvd4wzcCoKhe4SqhOxWEb9awtNFdM_zwTtU9MnXaN11jojJiiD9fhnYuDHpCBnd4eZcfmZw7BVUAlFbeCn-4px7ZpHijYTaeouOJL5Q1-upMC5x6r0s5Kgj2rLM8wBvX2Uzv2wfuYFM3G8zhe_DLWYJI8bRE8l69PJ6PbO263G8KOm5oN5ytWQDe0WByzj2nl9PuVip7yjBZOg0kVAjH_0oovcKNeB13KBYU-2RVVpQKH8GtkfOFEINAcfClWaHu8CtEMJSqhHD8C5-OEy_n2-es1jFguembkkQaFDv8DOX0_F94MJ602amjqN6RtCdvSND0YY5oihqKnFOcWtmTdk1g66jwFg0Rvvaoe05jc8pNIUPtI1LJBtBZ8mMTKzbtYWzjQ792SaCaXivKBdHw2WrksBEydo4k3B5FfC9HHq834gsIrQF4PHxGQgcZrRxfl-jKNrjfdUVghmd9G8AOeTZTFpw-2-_0StUvWjQgANTDAFyvxQ1GYE_qDqPJVpHjVbHX58DKytdqeXV5OQHOFcrG91rNEG9RtYREiC5l81fs-VQG9yQ59Duy-qz9oIdQlbEMszhtbeD3iUILRPtOkQ9lQvqMsmspfi3-_nNtPxZhE4zNaJZ0rsG8x_gpXYUopExAcOnOrZqKDMSNwNrCtA1grbhGS2GXAd0ChDdtVm3LoX1_jEKIfkItWC_FVGpBQWNQ7nYmXS6uEVq5u1Ns6rkhPTVRiw7khQXcBr1__aN3sI=.~lang=py-novice.e"><img src="assets/life.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui simule le jeu de la vie dans codeBoot.<br><br>Ce programme illustre l'utilisation de la fonction <code>sleep(délai)</code> pour faire l'animation d'un dessin.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fbGlmZS5weQ==~XQAAgABqBwAAAAAAAAARiAbn-eBeVIw041n8WaUad-brVmSGBXKBxv4FRLBfOtpmqCd96Aa7dUkZflCXPAfmURl6Ge_yx-OZ91ORKH7nCk_YRCEocw-K9x6uiCg3gz1AnVG66myAPVAHvezF2jYwCJ4mjkmb-x82hetYeH_otbvd4wzcCoKhe4SqhOxWEb9awtNFdM_zwTtU9MnXaN11jojJiiD9fhnYuDHpCBnd4eZcfmZw7BVUAlFbeCn-4px7ZpHijYTaeouOJL5Q1-upMC5x6r0s5Kgj2rLM8wBvX2Uzv2wfuYFM3G8zhe_DLWYJI8bRE8l69PJ6PbO263G8KOm5oN5ytWQDe0WByzj2nl9PuVip7yjBZOg0kVAjH_0oovcKNeB13KBYU-2RVVpQKH8GtkfOFEINAcfClWaHu8CtEMJSqhHD8C5-OEy_n2-es1jFguembkkQaFDv8DOX0_F94MJ602amjqN6RtCdvSND0YY5oihqKnFOcWtmTdk1g66jwFg0Rvvaoe05jc8pNIUPtI1LJBtBZ8mMTKzbtYWzjQ792SaCaXivKBdHw2WrksBEydo4k3B5FfC9HHq834gsIrQF4PHxGQgcZrRxfl-jKNrjfdUVghmd9G8AOeTZTFpw-2-_0StUvWjQgANTDAFyvxQ1GYE_qDqPJVpHjVbHX58DKytdqeXV5OQHOFcrG91rNEG9RtYREiC5l81fs-VQG9yQ59Duy-qz9oIdQlbEMszhtbeD3iUILRPtOkQ9lQvqMsmspfi3-_nNtPxZhE4zNaJZ0rsG8x_gpXYUopExAcOnOrZqKDMSNwNrCtA1grbhGS2GXAd0ChDdtVm3LoX1_jEKIfkItWC_FVGpBQWNQ7nYmXS6uEVq5u1Ns6rkhPTVRiw7khQXcBr1__aN3sI=.~lang=py-novice.~hidden=true.e"><img src="assets/life_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Le programme précédent sous forme d'application Web.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fcG9uZy5weQ==~XQAAgADNAwAAAAAAAAARiAbHwZWZKUr9qRCIlSqF_SmZVSZZ01yYHiUVDgvXHH5-Kidy9MB3aQom8q6Yc9RtMAUi2Zdobw9JAF2rgDAhMzvmwkU5XrobLmjuu3PpTKDCpnYi75GEwBkLgINSxqwGIP4BT3f9Shgy3j3eBQ5-QEQ1BLi1V9hKYeU2_mj2Y8WVBt9E_alPwYpqT4q1EPyRkNCyHCdsH3osCc4p2pqvAoE3z_-2XQqgv1TZt8TkDay3WNpF8JnaZW1zYt_dZmjpcTfi2n3JX0M3GICpYcoasDJMahBk6G0LbL5m9PQ_K2aTCA2-Cm4Kd8cyxPORQXmmdkRwSzNysjLt_QzY3aNK174olslueSOyX00AxzKObAjLJ8aJuLQ26lOGXOSHqfbJ7cT45VuRqeXj6JoQ7XH4Q88KEU5SpgBeC01IMvNd4HSFnY7enFwBLxVm3m1Qt4NUvd7z9jq673wdSueWebLKHV7XxGJuqHYBKbeX67tVO427kA9p8j_0hH01O6r86Rq-i1G7lryXa4AqeWpT0irEpU1jOru5rNI_UUIx_LSbegSIEaOAFuEaCqgaE0u4sefYKlX2oEPH1uxcfZ_eO4yb_z-FJ-1E8X9OM7t_y539BNQXlVD8dV6T.~lang=py-novice.e"><img src="assets/pong.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui montre une animation typique des jeux vidéo simples.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fcG9uZy5weQ==~XQAAgADNAwAAAAAAAAARiAbHwZWZKUr9qRCIlSqF_SmZVSZZ01yYHiUVDgvXHH5-Kidy9MB3aQom8q6Yc9RtMAUi2ZdobhuniI-81GucNi0t3cFLMzlMHfwDm-Lq69y7JR6r9xdPSnilog5kyZelqNDUMM7J5cBaZI4RACoi8FmJJoVHV40cs0_Wk0ZIXZ4Q5OkFYdtFmZIqIkbFuKsJ6FtK3AZaTQf4aEoGUgWnyj-5xu9vG2waEOhTTivtvUf0HCgpGZdasrJtUsazdINUzoP7Y4F26UuBAGwNs9oUY6iXBjTPjHForB2II8xQS2kR1bKEtp-yXpdeC6mCTkOrBd1Fc1VSwu_OF5Sn6B-wrBAzmkeopquCr362ES3xuvIBfxvmggKtkyrpsEr8bqMdUQsvurEN4x-glzDfqtHciHNGXYCKoM_ix8u0AtgyetqyNUzVMUneod5e0okbUruFBjYMUx4fWRZF9kKH0jND33V6_MnntVM_v4LQs9TcFHWoDuvId5ZqKlI2sIP8h6RBzTTwbu5-qXLsqPLCKVK9y7QX7aGy4kzXhv1W7oJ5T-O94YHsWypsdfCUTFlzO16Jr6CL7t_66-0lJhaDt-DJLn1eTtALAo6NGWLVB7qSqiOBQ__0PfFB.~lang=py-novice.~hidden=true.e"><img src="assets/pong_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Le programme précédent sous forme d'application Web.
+</td></tr></table>
+
+<hr>
+
+<h3>6. Dessiner une image à l'aide de la métaphore de la tortue</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fcG9seV9yZWcucHk=~XQAAgABsAQAAAAAAAAARiAaIocyXjOqgAizitr6Vs4Ah-z5mV2KEJt2q4wYBpWNW4rLqfc-4k3C0nWqGTBiLigh9kvdw_E__2lvEVGvFigG52SNfZqmioji_ekQ-Wp6DVxh29f3zLF3OiKWFGWtfj5iX9MWapA51qz_xT4fw-OOUDSDNxUpCEpjgBUdfgCVOZMYaOZV7TWKiQPlkiFkrS2CWeIt_mRFbFl8pqK5WdsmEI9Afmg6fH5xda9TzMVoeJhDk80PqiPH8VZ5Yn4HwOCqjYGsPT__6saYH.~lang=py-novice.e"><img src="assets/poly_reg.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui dessine des polygones réguliers.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fcm9zYWNlLnB5~XQAAgACdAgAAAAAAAAARiAUIMiYrPNjcfRwe9i6rxVscW4YZ9-HHLVyWqr_JgTAOig_YwPZwYynpnd5ValglwF8T6JUJq1o0yDU2OmPG5yx4yJeqIMopwvCvcXdjaoHsNAzHih-1CygdWfY1Fn8iSo_ZNdeaKLlxFWicJRrI31IlpJ9O_0mGZvu6WPR54LS8EjjWm8xQ2HP4E0W1G3XUMhCS_xB-INRSi1OyePblAkyjmmWR1kg4D9vyssj1yKLfPq6XWu36HowaCSeIehiqz_PTBC1aPLcGwoQkQ-0Vaj7mSySwJx_TNVmC8WxWG6_hu7yMOOemhFE_cUrqVkzj6-tMn0_kULwhSvlPFnldar655E-T0aCRV5F_uM9JZN3HX89F4LCAw5aKLlYACoqscrwQ3wnnGylYwYOq2AmAqXBksHZZ2Th_gYCoyYolvwfjCQOHx06LaIxcTk_uH9xrtS4meC9n6_cAA1VzkWy_oyS1w5VpDZBmpP1XlwEY7MvmRhIDN4iXd2C9lis3KtnXLx0_Et6E4_lmATyCrGzAThiesYqR21I_hxY4_8_BBBo=.~lang=py-novice.e"><img src="assets/rosace.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui dessine une rosace.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.faG9ybG9nZS5weQ==~XQAAgADdAAAAAAAAAAAzG8qmJ-n9tq3Fyha3c_QocyYvxBvfH44tvTjGTez7Jp6nBCwoC3p1F8mk3CvFtKeW67e5EEDObzKsEJ0VC_RhBWCotgY1K7_wRpzc0PSgI8rgZlmU2d4nCcD-tj8Ur0XoHNG4i_1F6-dA78_84TJN9O4YvLywzJccORIq9yPqtv6goLQEVJxvg_1Iq5LJ-j2Fy-A6JX__098AAA==.~lang=py-novice.e"><img src="assets/horloge.png" style="vertical-align:middle"></img></a>
+</td><td>
+Animation de l'aiguille des secondes d'une horloge.
+</td></tr></table>
+
+<hr>
+
+<h3>7. Recueillir et afficher des données d'un senseur «BLINX»</h3>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fc2Vuc2V1cnMucHk=~XQAAgACGAwAAAAAAAAARiASoYrfe4LEVIMzZN-xZ4ALz-EBf3AeN64IDYy7iPEfBZwCY5LoI5aDvxB6RgBTJYz-oBr6yQFrtvXtqtLow3VDXN4ZXjDfEkElfFDAz7zJT_J8CzXWWS25ZNKhire8If8RwoKiZTTzpluNIFcMlpfqKW96aua3lWsMqGfAGlIlS1I1t3drfH3nb6sG_q7UV2ydGIZDpDc3e0butr_IzPGWhaOVdGsiltA85x3nO4jBm0OA4bOsoeWT-JjoNa4ooENQ3Zj7quVx1c_eJwH1AXjvQ3gvXamNvDRKHjl-Q1FEN2MIPqgtKxguu6UAY0cIOVRsYLXhWmp9JTvmAIs_25EfzjHnXCCX5_tf37oGp1Y1KHbU6Yy21Ov-7Fve3d2fe-qj0IoDf37i_ZWsxn7KheOxdYwBxAy0BdiHCgtbeLnup4IH7EwLTnEwqUzbEEZg84FQDQArtVMK7dLHxGkIymtTydr15P5TuhDjnmbYvTgaWn8Nm4zLLxAjp9p2FeFsAWBz4L7bwrsoECqoS8JtQF1lqTvv4drHHoddP5rkrqQuwHMgL45WOlC5C63ExQFX4E8ueitfk9gLKNunFeV30FnuPznHPYZKz6y2TyofFjYYMqE-cCVIJVH2t4Rnmg1r6OTTh_lUiLj4zOjgbc3CkhRSBBJ3ON6pjjEFaGCgU8NH_1n5kJg==.~lang=py-novice.e"><img src="assets/senseurs.png" style="vertical-align:middle"></img></a>
+</td><td>
+Programme qui affiche la température en temps-réel obtenue avec un senseur sans-fil «BLINX».  Les températures et humidités relatives des dernières 5 minutes sont affichées sous forme de tableur et aussi sous forme de graphique.
+</td></tr></table>
+
+<table><tr><td>
+<a href="https://app.codeboot.org/4.0.0/?init=.fc2Vuc2V1cnMucHk=~XQAAgACGAwAAAAAAAAARiASoYrfe4LEVIMzZN-xZ4ALz-EBf3AeN64IDYy7iPEfBZwCY5LoI5aDvxB6RgBTJYz-oBr6yQFrtvXtqtLow3VDXN4ZXjDfEkElfFDAz7zJT_J8CzXWWS25ZNKhire8If8RwoKiZTTzpluNIFcMlpfqKW96aua3lWsMqGfAGlIlS1I1t3drfH3nb6sG_q7UV2ydGIZDpDc3e0butr_IzPGWhaOVdGsiltA85x3nO4jBm0OA4bOsoeWT-JjoNa4ooENQ3Zj7quVx1c_eJwH1AXjvQ3gvXamNvDRKHjl-Q1FEN2MIPqgtKxguu6UAY0cIOVRsYLXhWmp9JTvmAIs_25EfzjHnXCCX5_tf37oGp1Y1KHbU6Yy21Ov-7Fve3d2fe-qj0IoDf37i_ZWsxn7KheOxdYwBxAy0BdiHCgtbeLnup4IH7EwLTnEwqUzbEEZg84FQDQArtVMK7dLHxGkIymtTydr15P5TuhDjnmbYvTgaWn8Nm4zLLxAjp9p2FeFsAWBz4L7bwrsoECqoS8JtQF1lqTvv4drHHoddP5rkrqQuwHMgL45WOlC5C63ExQFX4E8ueitfk9gLKNunFeV30FnuPznHPYZKz6y2TyofFjYYMqE-cCVIJVH2t4Rnmg1r6OTTh_lUiLj4zOjgbc3CkhRSBBJ3ON6pjjEFaGCgU8NH_1n5kJg==.~lang=py-novice.~hidden=true.e"><img src="assets/senseurs_app_web.png" style="vertical-align:middle"></img></a>
+</td><td>
+Le programme précédent sous forme d'application Web.
+</td></tr></table>
+
+<hr>
 
 </body>
 </html>
+
