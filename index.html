@@ -3,14 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>codeBoot / CEGEP</title>
   <style>
+
+    html {
+      font-size: calc(15px + 0.390625vw);
+    }
+
     body {
+      --cb-header-height: 100px;
       --cb-header-color: #016bb6;
-      --cb-header-height: 3em;
       margin: 0;
-      padding-top: 4.5em;
-      font-size: 20px;
+      padding-top: calc(0.8 * var(--cb-header-height));
+      font-size: 125%;
     }
 
     code {
