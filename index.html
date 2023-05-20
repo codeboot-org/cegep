@@ -10,7 +10,16 @@
       --cb-header-height: 3em;
       margin: 0;
       padding-top: 4.5em;
-      font-size: 24px;
+      font-size: 20px;
+    }
+
+    code {
+      font-size: 80%;
+    }
+
+    td > p {
+      margin-block-start: 0.4em;
+      margin-block-end: 0.4em;
     }
 
     header {
@@ -22,15 +31,16 @@
       background-color: var(--cb-header-color);
       color: white;
       text-align: center;
-      padding-top: 20px;
       font-size: 36px;
       transition: box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     header > img {
-      position: fixed;
-      top: 0.75em;
-      left: 1.25em;
+      margin-left: 1em;
+      margin-right: 0.5em;
       width: 2em;
     }
 
@@ -62,8 +72,8 @@
 </head>
 <body>
   <header>
-    <b>codeBoot : un outil pour apprendre la programmation</b>
     <img src="assets/codeboot-org.png"></img>
+    <b>codeBoot : un outil pour apprendre la programmation</b>
   </header>
   <div class="content">
 
@@ -98,31 +108,31 @@
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.e1"><img src="assets/decompte.png" style="vertical-align:middle"></img></a>
 </td><td>
-Utiliser la console pour afficher un décompte pour illustrer le fonctionnement des boucles <code>while</code>.<br><br>Dans codeBoot cliquez sur le bouton «Exécuter le prochain pas» pour avancer l'exécution d'un pas et indiquer le résultat des calculs.
+<p>Utiliser la console pour afficher un décompte pour illustrer le fonctionnement des boucles <code>while</code>.</p><p>Dans codeBoot cliquez sur le bouton «Exécuter le prochain pas» pour avancer l'exécution d'un pas et indiquer le résultat des calculs.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.e35"><img src="assets/decompte_step35.png" style="vertical-align:middle"></img></a>
 </td><td>
-L'exécution pas-à-pas peut aussi débuter à un numéro de pas spécifique.
+<p>L'exécution pas-à-pas peut aussi débuter à un numéro de pas spécifique.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.~lang=py-novice.ibiA9IDUKd2hpbGUgbj4wOiBwcmludChuKTsgbiA9IG4tMQ==.a35"><img src="assets/decompte_step35.png" style="vertical-align:middle"></img></a>
 </td><td>
-L'exécution pas-à-pas peut aussi être animée automatiquement et optionnellement s'arrêter à un numéro de pas spécifique.
+<p>L'exécution pas-à-pas peut aussi être animée automatiquement et optionnellement s'arrêter à un numéro de pas spécifique.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdHJpLWJ1bGxlLnB5~XQAAgABfBAAAAAAAAAARiASo2atBSWIi9FfrXeRW3FOQUNmpghns7Az8Drkihr9cdxdWZ2Au_RNWClWFzg-bV5PC2Z2y8l2wXRiV0IhSGj8GLBWQF4gOxczEV0yLbqXQEfyXVtIKEuTWqvqxai91eDlQ-wI40vUpBbQwL6xpIuqXsalsPLY7HXvjILoYoFpME8qH4GmDcAn5BDo8XYPUyMthxUaOr1hOE6JdmvG1MWR4AGbsjRTpkyrknj68Wgozjs4bh-UwKsYoHrL0JZ_VxbX8KbeoCkitmH4eeNM4K30-Xdr3RsG6Hk580iw8MlXicwhS6qYj3Ld__d1BDSpF6uAvOlyGRqZj9exgj6a_qgMjTJUlhzUkEYeyro90AZ5ArSmZmY-8-28_D2hRvFrX3E-escunuglWPL8awH15QpsZnAGvGwQNXmetWqUaAKgCnU5RaW8Yi1OgCFHOwsME7HtDy7YOAACMzYQK-o0oEbWVUSpn9R5KDz1ccD1m4PIdxdIf_x5dnm--aXD_AK4leYAZ1a6tuEInWOQ-b7vaxFhsVlVQeViPmhypBbT4csQ0ujbeiTdYOkayyYqvEgfhsmztv9RFEmc2vzmNT55lj_D9co5EBGt6AwbPCQa66RWJA7S_GvGNHT1lsS4nb8DylCjUieU9iiZ3p9wQ5O_sCcnXwPN2O6ZP_l0CfYtCNdpePvypJKkqMsglsuyLqhLg1MDhXupAkUQ-GwWq1bAsrKvDEH1n_vd-ERM=.~lang=py-novice.e"><img src="assets/tri_bulle.png" style="vertical-align:middle"></img></a>
 </td><td>
-L'utilisation de la fonction <code>sleep(délai)</code> et <code>breakpoint()</code> permettent d'expliquer les programmes plus complexes, par exemple un «tri bulle».<br><br>Dans codeBoot tapez la touche «Enter» pour continuer l'exécution après un appel à <code>breakpoint()</code> ou le bouton «Exécuter le prochain pas» pour avancer d'un seul pas d'exécution.
+<p>L'utilisation de la fonction <code>sleep(délai)</code> et <code>breakpoint()</code> permettent d'expliquer les programmes plus complexes, par exemple un «tri bulle».</p><p>Dans codeBoot tapez la touche «Enter» pour continuer l'exécution après un appel à <code>breakpoint()</code> ou le bouton «Exécuter le prochain pas» pour avancer d'un seul pas d'exécution.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdHJpLWJ1bGxlLnB5~XQAAgABgBAAAAAAAAAARiASo2atBSWIi9FfrXeRW3FOQUNmpghns7Az8Drkihr9cdxdWZ2Au_RNWClWFzg-bV5PC2Z2y8l2wXRiV0IhSGj8GLBWQF4gOxczEV0yLbqXQEfyXVtIKEuTWqvqxai91eDlQ-wI40vUpBbQwL6xpIuqXsalsPLY7HXvjILoYoFpME8qH4GmDcAn5BDo8XYPUyMthxUaOr1hOE6JdmvG1MWR4AGbsjRTpkyrknj68Wgozjs4bh-UwKsYoHrL0JZ_VxbX8KbeoCkitmH4eeNM4K30-Xdr3RsG6Hk580iw8MlXicwhS6qYj3Ld__d1BDSpF6uAvOlyGRqZj9exgj6a_qgMjTJUlhzUkEYeyro90AZ5ArSmZmY-8-28_D2hRvFrX3E-escunuglWPL8awH15QpsZnAGvGwQNXmetWqUaAKgCnU5RaW8Yi1OgCFHOwsME7HtDy7YOAACMzYQK-o0oEbWVUSpn9R5KDz1KA2Ysvc-TjEaCuE4iuCNp7_ER86elUs5l7yV2iISerz3RQIguNgZaRTN5hFfIpceHlljqqeFQ6207gar9JL4XOW6LRiWa9xl28Zdbkmflkw4AoH-ofWxlaAeZxTPX2uCRA6FtlUP_05C-px1SrgmTEi0dvxze8uOSsvxB0XIsTHj2o5meGgQHhx2DiurzLtCJjLitTh5TJKCiUEq26BKU7ffjnFYex3gEA89oCjQvKOJzeO5PDZhlgK5Z_3sFgwA=.~lang=py-novice.~hidden=true.e"><img src="assets/tri_bulle_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Comme l'exemple précédent mais en tant qu'application Web et sans appel à <code>breakpoint()</code>.
+<p>Comme l'exemple précédent mais en tant qu'application Web et sans appel à <code>breakpoint()</code>.</p>
 </td></tr></table>
 
 <hr>
@@ -132,13 +142,13 @@ Comme l'exemple précédent mais en tant qu'application Web et sans appel à <co
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fYm9uam91ci5weQ==~XQAAgAAzAAAAAAAAAAAwmwjUg2VS92Xhnf4TKcZ_V1CwmoO1RxpBNEf_c8xIb1_2c70QE9icXCt4bqnc4_F31OqSab__wXQAAA==.~lang=py-novice.e"><img src="assets/bonjour.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui demande le nom de l'utilisateur puis le salue.
+<p>Programme qui demande le nom de l'utilisateur puis le salue.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fYm9uam91ci5weQ==~XQAAgAAzAAAAAAAAAAAwmwjUg2VS92Xhnf4TKcZ_V1CwmoO1RxpBNEf_c8xIb1_2c70QE9icXCt4bqnc4_F31OqSab__wXQAAA==.~lang=py-novice.~hidden=true.e"><img src="assets/bonjour_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Comme l'exemple précédent mais en tant qu'application Web.
+<p>Comme l'exemple précédent mais en tant qu'application Web.</p>
 </td></tr></table>
 
 <hr>
@@ -148,25 +158,25 @@ Comme l'exemple précédent mais en tant qu'application Web.
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZGVzLnB5~XQAAgABDAgAAAAAAAAARiAcomZM8lCcg7PiXAPNQTmx04gnRMqwuGRJAlNV-t2mkmrXAhUlzpp0DF0lEQmPOmOe9SAlHQcRjj1O6SOG7g3evjYBB01HxX-3IWwjbxVRS5Z27k4-Fff5Q6bKp0ZzMzMpoWhLDal1sn1POKhftU_V8-KVIKadwDSO52bm5vjXFO8yDdbyyNhKr_w29KbZoa9dPsGQY6LJPG2eNTnxNAAiNjIRjgJLnTNAtsU8rYyXtbLbY8FN3LHGhCopEYoYrpNMhxnTcGbcGg219ScqerQSji5jWXM_WTpsx-n1Nvjn60PM_h3k9CBBxt8SJSAKWD5ivPItRBLZa2TU2EcG-0NE4HVz-fKVOCDgGZiS30T3JRkowedk44Z9y5wcYtXDvWYV7UoWBGvCJaXbuJJ58_XtGvWU-RbaFI7bNdjsCj7mgWEWO7QOEXEKyOz6B0WAVem5s9N2HkvTy9wx3Fd9Sf8NTZbT6CAsqOy_IQDJ45pIA3geN_h5xycsRTXgQneyGEHx9dRLHw1e6ryMFg_-m-L2A.~lang=py-novice.e"><img src="assets/des.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui simule le lancé de 2 dés à jouer lorsqu'un bouton est cliqué.<br><br>Cet exemple illustre l'accès au DOM du navigateur et aussi le mode «flottant» de codeBoot qui facilite le déboggage d'interface utilisateur.
+<p>Programme qui simule le lancé de 2 dés à jouer lorsqu'un bouton est cliqué.</p><p>Cet exemple illustre l'accès au DOM du navigateur et aussi le mode «flottant» de codeBoot qui facilite le déboggage d'interface utilisateur.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZGVzLnB5~XQAAgABDAgAAAAAAAAARiAcomZM8lCcg7PiXAPNQTmx04gnRMqwuGRJAlNV-t2mkmrXAhUlzpp0DF0lEQmPOmOe9SAlHQcRjj1O6SOG7g3evjYBB01HxX-3IWwjbxVRS5Z27k4-Fff5Q6bKp0ZzMzMpoWhLDal1sn1POKhftU_V8-KVIKadwDSO52bm5vjXFO8yDdbyyNhKr_w29KbZoa9dPsGQY6LJPG2eNTnxNAAiNjIRjgJLnTNAtsU8rYyXtbLbY8FN3LHGhCopEYoYrpNMhxnTcGbcGg219ScqerQSji5jWXM_WTpsx-n1Nvjn60PM_h3k9CBBxt8SJSAKWD5ivPItRBLZa2TU2EcG-0NE4HVz-fKVOCDgGZiS30T3JRkowedk44Z9y5wcYtXDvWYV7UoWBGvCJaXbuJJ58_XtGvWU-RbaFI7bNdjsCj7mgWEWO7QOEXEKyOz6B0WAVem5s9N2HkvTy9wx3Fd9Sf8NTZbT6CAsqOy_IQDJ45pIA3geN_h5xycsRTXgQneyGEHx9dRLHw1e6ryMFg_-m-L2A.~lang=py-novice.~hidden=true.e"><img src="assets/des_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Comme l'exemple précédent mais en tant qu'application Web.
+<p>Comme l'exemple précédent mais en tant qu'application Web.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdGljLXRhYy10b2UucHk=~XQAAgAA8DgAAAAAAAAARiAXIAjDWxtRekiDuvy2KXH4wW7Uqzg4BPaI8n5rABAIUnN89iAX0n87RKoT6AULutMBgWgEc1W6nw0rBvGarLHhxVK-byJqKbDXFIx-DjL7HY2ROkBnaVY65MY6laNsWmllj7rTyFHUmtETC4DQTXxR0_N9r2I-MXmZvdLkNpclFaULvP54kScJ3WfwCOMB4uDrCVgCdZ_CXBfDYmS_184l0a-9OJ0kLX37rBJ0Y4H2Nwv7pJPnM5xpZ5rJ8XSxGovc53Q7XtWcSPnOHEm9wbKTfKOCEdH7xcRa1A0BnBgyXvqx5DlH5O0adiI3LUFlLJqlQxUshLXQhd5DhZ4DbSUnsKv4KA4wQ9TT7zfbNuaNu3JhB-_9pt_OnXuwD2umT4F6KxoaexVwoIWEc27TXI4HYa7vi0iHd_PV-nkFgPFLN-hL--QSEwvyAwKVEzDFuu5A70XGr2_IgVk8hyiFojKqHBxaBByYvp7m5Gr8ktX8yzqSQAIR_XP1JrWwSOkqSSXpsXUXsPWOm3gPnqicTMdf6BgN3K0egKnbsH7sDXSjGpjJ0Bt_gCwXPNAUQqSIJWMN2ioqiUmF0MinpgoMrCmnCtH5qF-Hd3jLC6SZOU1zqru370Ooa7CFgjq4DZy7nouU0OrXWiESuG6zxFYP5B2tPln2HWbnJuz8lCIlkZUIql3PCcSZuba96A_-dIiLKY938pSSmUPbqdHALbwG-qzh0KnXoZ4uTLmEpwJzjIKfqkxB6gvSjXbPtrlNmis-z6XS05axjqgvB94_JLSOLLy7C87DSAzijekornkELyhIOzaTJsR3FRDjSk4PPWXF1MRmlXOxRVkG4OKb6fAuONfgaR_RKxnPWVQHqSU4_mwuMFZeeapBedqvH2mf38cfJg66Y5NNvzIOiz_iFGi-1XT-5NXqzzv-6FUXOI7OXB_BSJduADB4-9oYrSq5vrvpn_pXWX5BNmIi8303iQU2QbXKHJVj6QpUm1nSvwFW4YpDxw1CDikS3huioi39a2cFbhaT6J3ne5O1yYI2X3eHcneKbgJB2awiY3QMtdUgb4wSfI_b3Y06cYJWt4rQd5qaiu0RmCP_HVTP5j7OWtBIsmu6r4EpZDg9-bD6mmbfXRgFLgSmbugHDhzUrWTooktQ6fV3omo8aslxWvVORFHZUq0p6colTWg1UPJ14XZDT5dWmZhKj85unzWyBLvdajJTtXfegoUWtyjjbccg0yBfF2ESi22I4QknBFvuPk1Rd2Or9LWAqCwoP-p_e_xvZRJI0KvUJqRe0V8j8XJJGrOtuFK_HSJubunRO-gCSb8-SrxAxog8CD7tJlxoAH9BXd7s812twzUovIFQINP83bWAM1Cj3FhvzIsOsEmTEdEKzfI3aOGcVlgySbAznKodJJmSYJE1SQvQeeaN9Tqq1ZxVCMKJDD8jAuqBshdis7e1wIC2qmX6INGpif4I0DkMz94PWg7DwNcC99HSlfpAN0zMT_XH0MzECsTa5YYfCkPCoDs8_uxrf_-1jPP8=.~lang=py-novice.e"><img src="assets/tic_tac_toe.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme de tic-tac-toe avec des boutons et une grille de cases cliquables. Le jeu se joue dans le «terrain de jeu» accessible par la variable <code>playground</code>.
+<p>Programme de tic-tac-toe avec des boutons et une grille de cases cliquables. Le jeu se joue dans le «terrain de jeu» accessible par la variable <code>playground</code>.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdGljLXRhYy10b2UucHk=~XQAAgAA8DgAAAAAAAAARiAXIAjDWxtRekiDuvy2KXH4wW7Uqzg4BPaI8n5rABAIUnN89iAX0n87RKoT6AULutMBgWgEc1W6nw0rBvGarLHhxVK-byJqKbDXFIx-DjL7HY2ROkBnaVY65MY6laNsWmllj7rTyFHUmtETC4DQTXxR0_N9r2I-MXmZvdLkNpclFaULvP54kScJ3WfwCOMB4uDrCVgCdZ_CXBfDYmS_184l0a-9OJ0kLX37rBJ0Y4H2Nwv7pJPnM5xpZ5rJ8XSxGovc53Q7XtWcSPnOHEm9wbKTfKOCEdH7xcRa1A0BnBgyXvqx5DlH5O0adiI3LUFlLJqlQxUshLXQhd5DhZ4DbSUnsKv4KA4wQ9TT7zfbNuaNu3JhB-_9pt_OnXuwD2umT4F6KxoaexVwoIWEc27TXI4HYa7vi0iHd_PV-nkFgPFLN-hL--QSEwvyAwKVEzDFuu5A70XGr2_IgVk8hyiFojKqHBxaBByYvp7m5Gr8ktX8yzqSQAIR_XP1JrWwSOkqSSXpsXUXsPWOm3gPnqicTMdf6BgN3K0egKnbsH7sDXSjGpjJ0Bt_gCwXPNAUQqSIJWMN2ioqiUmF0MinpgoMrCmnCtH5qF-Hd3jLC6SZOU1zqru370Ooa7CFgjq4DZy7nouU0OrXWiESuG6zxFYP5B2tPln2HWbnJuz8lCIlkZUIql3PCcSZuba96A_-dIiLKY938pSSmUPbqdHALbwG-qzh0KnXoZ4uTLmEpwJzjIKfqkxB6gvSjXbPtrlNmis-z6XS05axjqgvB94_JLSOLLy7C87DSAzijekornkELyhIOzaTJsR3FRDjSk4PPWXF1MRmlXOxRVkG4OKb6fAuONfgaR_RKxnPWVQHqSU4_mwuMFZeeapBedqvH2mf38cfJg66Y5NNvzIOiz_iFGi-1XT-5NXqzzv-6FUXOI7OXB_BSJduADB4-9oYrSq5vrvpn_pXWX5BNmIi8303iQU2QbXKHJVj6QpUm1nSvwFW4YpDxw1CDikS3huioi39a2cFbhaT6J3ne5O1yYI2X3eHcneKbgJB2awiY3QMtdUgb4wSfI_b3Y06cYJWt4rQd5qaiu0RmCP_HVTP5j7OWtBIsmu6r4EpZDg9-bD6mmbfXRgFLgSmbugHDhzUrWTooktQ6fV3omo8aslxWvVORFHZUq0p6colTWg1UPJ14XZDT5dWmZhKj85unzWyBLvdajJTtXfegoUWtyjjbccg0yBfF2ESi22I4QknBFvuPk1Rd2Or9LWAqCwoP-p_e_xvZRJI0KvUJqRe0V8j8XJJGrOtuFK_HSJubunRO-gCSb8-SrxAxog8CD7tJlxoAH9BXd7s812twzUovIFQINP83bWAM1Cj3FhvzIsOsEmTEdEKzfI3aOGcVlgySbAznKodJJmSYJE1SQvQeeaN9Tqq1ZxVCMKJDD8jAuqBshdis7e1wIC2qmX6INGpif4I0DkMz94PWg7DwNcC99HSlfpAN0zMT_XH0MzECsTa5YYfCkPCoDs8_uxrf_-1jPP8=.~lang=py-novice.~hidden=true.e"><img src="assets/tic_tac_toe_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Comme l'exemple précédent mais en tant qu'application Web.
+<p>Comme l'exemple précédent mais en tant qu'application Web.</p>
 </td></tr></table>
 
 <hr>
@@ -176,37 +186,37 @@ Comme l'exemple précédent mais en tant qu'application Web.
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbmV3dG9uLnB5~XQAAgAB1AgAAAAAAAAAyGUj_T013u4h3Qiioq_rDWeleoFxzIxSmgzUitBw8ep77h_od3hgPvKdacS11JycVaVKvgUsgDhklhoZ_c69swMEXSztWQS8-ysdyECCrdxbU9FyYzOLKAX81eJbDhisHexh2Nhs12d0jzEm3nUNaRS-U1QwtKw5yFnVMPfEFgfqy7WhBGWrhy0PpvdPyZE6gHCpbU8q9h1mbu9TszrBIJgDsnjp9YWtQNRYT2Ybo9q4Q3cGMOBxbjpTwtqavkPV1OoU9mjT-Ljan9IQx89KiGGgfzHk7Wy2ajRpATT-Wn-9dGTP5mzDTVcXhOGS0AYZM8MhlDwDTwBpFEt2ijlA9M1q1Y10CR8KWea8w4FtWzKUMD-majtdtqK6z5pfqWV3YaSmtJeH-x3y0mFFDq6H_BY8LMjmQgWz09NZTUUOYoxMnBn3jrF42rRPEaqJgK-Lxlb3ok0HMTXGm__y9pVGiQKieUmyQU2v_96f2HQ==.~lang=py-novice.e"><img src="assets/newton.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui calcule des racines avec la méthode de Newton et qui affiche les fonctions <code>x**(1/2)</code>, <code>x**(1/3)</code> et <code>x**(1/4)</code>.
+<p>Programme qui calcule des racines avec la méthode de Newton et qui affiche les fonctions <code>x**(1/2)</code>, <code>x**(1/3)</code> et <code>x**(1/4)</code>.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbmV3dG9uLnB5~XQAAgAB1AgAAAAAAAAAyGUj_T013u4h3Qiioq_rDWeleoFxzIxSmgzUitBw8ep77h_od3hgPvKdacS11JycVaVKvgUsgDhklhoZ_c69swMEXSztWQS8-ysdyECCrdxbU9FyYzOLKAX81eJbDhisHexh2Nhs12d0jzEm3nUNaRS-U1QwtKw5yFnVMPfEFgfqy7WhBGWrhy0PpvdPyZE6gHCpbU8q9h1mbu9TszrBIJgDsnjp9YWtQNRYT2Ybo9q4Q3cGMOBxbjpTwtqavkPV1OoU9mjT-Ljan9IQx89KiGGgfzHk7Wy2ajRpATT-Wn-9dGTP5mzDTVcXhOGS0AYZM8MhlDwDTwBpFEt2ijlA9M1q1Y10CR8KWea8w4FtWzKUMD-majtdtqK6z5pfqWV3YaSmtJeH-x3y0mFFDq6H_BY8LMjmQgWz09NZTUUOYoxMnBn3jrF42rRPEaqJgK-Lxlb3ok0HMTXGm__y9pVGiQKieUmyQU2v_96f2HQ==.~lang=py-novice.~hidden=true.e"><img src="assets/newton_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdGVtcGVyYXR1cmVzLnB5~XQAAgAAtAQAAAAAAAAARiAYH8Z3t6tI0NxfnqVYjnr_OTwCiTT5ox1xbKuM1DFhRRYwnlksaeqvzN-i6lIC-AkMjgotZvX2_eeK6tsQRe8b0G1YlFS5IHDAnz9YmoDq40El_LFueJg5XbOqK-Ln3oaQd3RIHcPEqZVUf1DXiMiomD0y5N3kqltZ3SG477WDngJyneBotFF-JS9-7WF7B_dNA2oLJROtp3iMCZnRnfux6zlbRwsxwAgIZ-wMc-m5XuQzBvKbjUrPAZ7BRF8ZGF91oGGb9fGcVRPdMYrwGKJzVQN3USU-OYmX8vkykcmKQt3AUUcdgXh0Tl_-egYWA.~lang=py-novice.e"><img src="assets/temperatures.png" style="vertical-align:middle"></img></a>
 </td><td>
-Lecture et affichage graphique des températures quotidiennes moyennes à Montréal entre 1995 et 2010 en format CSV provenant d'un dépot github.<br><br>Cet exemple illustre les fonctions <code>read_file(source)</code> et <code>chart(données_CSV)</code>.
+<p>Lecture et affichage graphique des températures quotidiennes moyennes à Montréal entre 1995 et 2010 en format CSV provenant d'un dépot github.</p><p>Cet exemple illustre les fonctions <code>read_file(source)</code> et <code>chart(données_CSV)</code>.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fdGVtcGVyYXR1cmVzLnB5~XQAAgAAtAQAAAAAAAAARiAYH8Z3t6tI0NxfnqVYjnr_OTwCiTT5ox1xbKuM1DFhRRYwnlksaeqvzN-i6lIC-AkMjgotZvX2_eeK6tsQRe8b0G1YlFS5IHDAnz9YmoDq40El_LFueJg5XbOqK-Ln3oaQd3RIHcPEqZVUf1DXiMiomD0y5N3kqltZ3SG477WDngJyneBotFF-JS9-7WF7B_dNA2oLJROtp3iMCZnRnfux6zlbRwsxwAgIZ-wMc-m5XuQzBvKbjUrPAZ7BRF8ZGF91oGGb9fGcVRPdMYrwGKJzVQN3USU-OYmX8vkykcmKQt3AUUcdgXh0Tl_-egYWA.~lang=py-novice.~hidden=true.e"><img src="assets/temperatures_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZm91cmllci5weQ==~XQAAgACjAwAAAAAAAAARiAToOiiYyS3KXaC2g_k8jeJni7C2Gz3lVzVpVz977mn_5QoFg11obsRf_QveinWvyAYVGHQO1m3Kc1jFtLZhj8qK4CviwGwDP0YYe2TvJwP8TTQrvr29WMatWEFzGUCC_4XEU14tuLjIy8zshVdbN9rBGnuCCCiPHr41t2DdOuWGsvLh2bxKM4uxVhiqjNoBaeeNTghLHWWkPLG7UhtNRu6US51RWZBOt1zUwsu6Q126Dr62dkDf5jcEO1a-QmnOwbrauRjtDSUDM9of6pajiwkI3EKEe07lvkCgSvHA3RmAbJF_gXbtNO2Q4oM_4JZKWF0juOddLDdXGc3ut90iH2dQitCeSg9-rY5-YVq8kqzyj7LXZAg1ZcYAHjMjZZFIcQtsvdx_nvPWv2T6p3Te7K9MuYM5y0daqRt1Uhuk9DofIpKYCHBAF-scvNu3E1UVyddCyelAcsnKxV8vceX-O9XvmivPn5I59BSsHT329g6VWaSyvrCoUWFLzpFV-1jAqDq1Ico4kPuUu4BxIbYJsAxtcPHYy45876J10OrKhTLAw9KvfKy-jZLJxp2Bm4uOZRPcQ9bEx28pwNd1USIAFsiEdLrh48ODxeBD1rcM4EvrU_FMWbTg2FNkXx70ZtkRtWPRfplGGf8zjKAA.~lang=py-novice.e"><img src="assets/fourier.png" style="vertical-align:middle"></img></a>
 </td><td>
-Approximation d'une onde carrée par la somme de plusieurs ondes sinusoïdales.  L'approximation s'améliore plus on ajoute des termes à la série de Fourier.
+<p>Approximation d'une onde carrée par la somme de plusieurs ondes sinusoïdales.  L'approximation s'améliore plus on ajoute des termes à la série de Fourier.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZm91cmllci5weQ==~XQAAgACjAwAAAAAAAAARiAToOiiYyS3KXaC2g_k8jeJni7C2Gz3lVzVpVz977mn_5QoFg11obsRf_QveinWvyAYVGHQO1m3Kc1jFtLZhj8qK4CviwGwDP0YYe2TvJwP8TTQrvr29WMatWEFzGUCC_4XEU14tuLjIy8zshVdbN9rBGnuCCCiPHr41t2DdOuWGsvLh2bxKM4uxVhiqjNoBaeeNTghLHWWkPLG7UhtNRu6US51RWZBOt1zUwsu6Q126Dr62dkDf5jcEO1a-QmnOwbrauRjtDSUDM9of6pajiwkI3EKEe07lvkCgSvHA3RmAbJF_gXbtNO2Q4oM_4JZKWF0juOddLDdXGc3ut90iH2dQitCeSg9-rY5-YVq8kqzyj7LXZAg1ZcYAHjMjZZFIcQtsvdx_nvPWv2T6p3Te7K9MuYM5y0daqRt1Uhuk9DofIpKYCHBAF-scvNu3E1UVyddCyelAcsnKxV8vceX-O9XvmivPn5I59BSsHT329g6VWaSyvrCoUWFLzpFV-1jAqDq1Ico4kPuUu4BxIbYJsAxtcPHYy45876J10OrKhTLAw9KvfKy-jZLJxp2Bm4uOZRPcQ9bEx28pwNd1USIAFsiEdLrh48ODxeBD1rcM4EvrU_FMWbTg2FNkXx70ZtkRtWPRfplGGf8zjKAA.~lang=py-novice.~hidden=true.e"><img src="assets/fourier_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <hr>
@@ -216,55 +226,55 @@ Le programme précédent sous forme d'application Web.
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.FZGVtb19waXhlbHMucHk=~XQAAgADoAgAAAAAAAAA7GUqsHfXrWjaPoyr47CcTbIR0QPbm5Z5pDZnqj5htr93KFDfjLwcClGIYHIS6ZYuiIYVGGlwijDvI6sMKSNSkKe3bUpzPMa3rK7JCq13Mpx-6wRlhm1-IFG0Hg9LUdHN8-kF9Aa7OkBszbFunDz0JwWScwUODFX2bunXA2MPaQt79PLzrbYfly4y20JHS8AwG4h1YlR4tu52uaaFPtuC_E_nvuCm4wVI_m8Htudedrs9eS_FllIvBB1XqMJcVnMf4jB4YfngDfEECiWYGiIOgoV_LN1Ae4o27ZwsV4aynpwRbDJrpWon6MvkdKRBttw9qUmEK1TMyh8PFmq9l79wNG6k8m0b95337MxEElfCi-dNnZCt0LXHa9amYwTGf54o1e6zZX_sVGCS4wX6YA2opkkBOQMowRA423x83_qa3G6KuFCXNj-3ZvZnRLHty3sIcDs4yw22DtM_kg6a-qXk2d9otnzCjoXnhjDlaoiL_StqEzfhLEK1EpNWNytgTnCBmhMLMzD8WisaFVwrthaqgG9yOlw8L04RDR1I9-rIMtNmFM427P__KKlO6.ocGx1cy5wbmc=~XQAAgAAeAwAAAAAAAAARmaxhYIGMwZDiniryfHc2IRL4g-XX7n-P8rC7A___NyEAAA==.~lang=py-novice.e"><img src="assets/demo_pixels.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui dessine une image à l'écran dans codeBoot.
+<p>Programme qui dessine une image à l'écran dans codeBoot.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.FZGVtb19waXhlbHMucHk=~XQAAgADoAgAAAAAAAAA7GUqsHfXrWjaPoyr47CcTbIR0QPbm5Z5pDZnqj5htr93KFDfjLwcClGIYHIS6ZYuiIYVGGlwijDvI6sMKSNSkKe3bUpzPMa3rK7JCq13Mpx-6wRlhm1-IFG0Hg9LUdHN8-kF9Aa7OkBszbFunDz0JwWScwUODFX2bunXA2MPaQt79PLzrbYfly4y20JHS8AwG4h1YlR4tu52uaaFPtuC_E_nvuCm4wVI_m8Htudedrs9eS_FllIvBB1XqMJcVnMf4jB4YfngDfEECiWYGiIOgoV_LN1Ae4o27ZwsV4aynpwRbDJrpWon6MvkdKRBttw9qUmEK1TMyh8PFmq9l79wNG6k8m0b95337MxEElfCi-dNnZCt0LXHa9amYwTGf54o1e6zZX_sVGCS4wX6YA2opkkBOQMowRA423x83_qa3G6KuFCXNj-3ZvZnRLHty3sIcDs4yw22DtM_kg6a-qXk2d9otnzCjoXnhjDlaoiL_StqEzfhLEK1EpNWNytgTnCBmhMLMzD8WisaFVwrthaqgG9yOlw8L04RDR1I9-rIMtNmFM427P__KKlO6.ocGx1cy5wbmc=~XQAAgAAeAwAAAAAAAAARmaxhYIGMwZDiniryfHc2IRL4g-XX7n-P8rC7A___NyEAAA==.~lang=py-novice.~hidden=true.e"><img src="assets/demo_pixels_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Application Web qui dessine une image à l'écran.
+<p>Application Web qui dessine une image à l'écran.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZGluby5weQ==~XQAAgABQAAAAAAAAAAA0m0hHVwkelMvBEGNrHLHc92V2lTjWvPQMpHgK83Etg86Gg0mnxe2VTO-HMu4NhF-X1u2mRr8vRwJd0nVYn6EFN5287yFuzIfcpB__iFmAAA==.oZGluby5wbmc=~XQAAgACQBgAAAAAAAAARmbAtSDBVipEQmiHkFZqLl0xV7cWR-f_hm2b93ZoElfuWauCImacuVb7GZ-aERvcLCqhNAxHqBOWf3dJ1J524hpBugNmWM2IrogAoSIxHIsFrtKtUUbr4OOCqYrf3E2JVocDAVmFyj5iSeeOod5To3D2cSNHY0jNfoGGd7IHwYO4N_-z6sRI=.~lang=py-novice.e"><img src="assets/dino.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui dessine une image stockée dans un fichier.<br><br>Le fichier a été créé par un glisser-déposer d'un fichier .png de l'ordinateur vers codeBoot.
+<p>Programme qui dessine une image stockée dans un fichier.</p><p>Le fichier a été créé par un glisser-déposer d'un fichier .png de l'ordinateur vers codeBoot.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbGlmZS5weQ==~XQAAgABqBwAAAAAAAAARiAbn-eBeVIw041n8WaUad-brVmSGBXKBxv4FRLBfOtpmqCd96Aa7dUkZflCXPAfmURl6Ge_yx-OZ91ORKH7nCk_YRCEocw-K9x6uiCg3gz1AnVG66myAPVAHvezF2jYwCJ4mjkmb-x82hetYeH_otbvd4wzcCoKhe4SqhOxWEb9awtNFdM_zwTtU9MnXaN11jojJiiD9fhnYuDHpCBnd4eZcfmZw7BVUAlFbeCn-4px7ZpHijYTaeouOJL5Q1-upMC5x6r0s5Kgj2rLM8wBvX2Uzv2wfuYFM3G8zhe_DLWYJI8bRE8l69PJ6PbO263G8KOm5oN5ytWQDe0WByzj2nl9PuVip7yjBZOg0kVAjH_0oovcKNeB13KBYU-2RVVpQKH8GtkfOFEINAcfClWaHu8CtEMJSqhHD8C5-OEy_n2-es1jFguembkkQaFDv8DOX0_F94MJ602amjqN6RtCdvSND0YY5oihqKnFOcWtmTdk1g66jwFg0Rvvaoe05jc8pNIUPtI1LJBtBZ8mMTKzbtYWzjQ792SaCaXivKBdHw2WrksBEydo4k3B5FfC9HHq834gsIrQF4PHxGQgcZrRxfl-jKNrjfdUVghmd9G8AOeTZTFpw-2-_0StUvWjQgANTDAFyvxQ1GYE_qDqPJVpHjVbHX58DKytdqeXV5OQHOFcrG91rNEG9RtYREiC5l81fs-VQG9yQ59Duy-qz9oIdQlbEMszhtbeD3iUILRPtOkQ9lQvqMsmspfi3-_nNtPxZhE4zNaJZ0rsG8x_gpXYUopExAcOnOrZqKDMSNwNrCtA1grbhGS2GXAd0ChDdtVm3LoX1_jEKIfkItWC_FVGpBQWNQ7nYmXS6uEVq5u1Ns6rkhPTVRiw7khQXcBr1__aN3sI=.~lang=py-novice.e"><img src="assets/life.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui simule le jeu de la vie dans codeBoot.<br><br>Ce programme illustre l'utilisation de la fonction <code>sleep(délai)</code> pour faire l'animation d'un dessin.
+<p>Programme qui simule le jeu de la vie dans codeBoot.</p><p>Ce programme illustre l'utilisation de la fonction <code>sleep(délai)</code> pour faire l'animation d'un dessin.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbGlmZS5weQ==~XQAAgABqBwAAAAAAAAARiAbn-eBeVIw041n8WaUad-brVmSGBXKBxv4FRLBfOtpmqCd96Aa7dUkZflCXPAfmURl6Ge_yx-OZ91ORKH7nCk_YRCEocw-K9x6uiCg3gz1AnVG66myAPVAHvezF2jYwCJ4mjkmb-x82hetYeH_otbvd4wzcCoKhe4SqhOxWEb9awtNFdM_zwTtU9MnXaN11jojJiiD9fhnYuDHpCBnd4eZcfmZw7BVUAlFbeCn-4px7ZpHijYTaeouOJL5Q1-upMC5x6r0s5Kgj2rLM8wBvX2Uzv2wfuYFM3G8zhe_DLWYJI8bRE8l69PJ6PbO263G8KOm5oN5ytWQDe0WByzj2nl9PuVip7yjBZOg0kVAjH_0oovcKNeB13KBYU-2RVVpQKH8GtkfOFEINAcfClWaHu8CtEMJSqhHD8C5-OEy_n2-es1jFguembkkQaFDv8DOX0_F94MJ602amjqN6RtCdvSND0YY5oihqKnFOcWtmTdk1g66jwFg0Rvvaoe05jc8pNIUPtI1LJBtBZ8mMTKzbtYWzjQ792SaCaXivKBdHw2WrksBEydo4k3B5FfC9HHq834gsIrQF4PHxGQgcZrRxfl-jKNrjfdUVghmd9G8AOeTZTFpw-2-_0StUvWjQgANTDAFyvxQ1GYE_qDqPJVpHjVbHX58DKytdqeXV5OQHOFcrG91rNEG9RtYREiC5l81fs-VQG9yQ59Duy-qz9oIdQlbEMszhtbeD3iUILRPtOkQ9lQvqMsmspfi3-_nNtPxZhE4zNaJZ0rsG8x_gpXYUopExAcOnOrZqKDMSNwNrCtA1grbhGS2GXAd0ChDdtVm3LoX1_jEKIfkItWC_FVGpBQWNQ7nYmXS6uEVq5u1Ns6rkhPTVRiw7khQXcBr1__aN3sI=.~lang=py-novice.~hidden=true.e"><img src="assets/life_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fcG9uZy5weQ==~XQAAgADNAwAAAAAAAAARiAbHwZWZKUr9qRCIlSqF_SmZVSZZ01yYHiUVDgvXHH5-Kidy9MB3aQom8q6Yc9RtMAUi2Zdobw9JAF2rgDAhMzvmwkU5XrobLmjuu3PpTKDCpnYi75GEwBkLgINSxqwGIP4BT3f9Shgy3j3eBQ5-QEQ1BLi1V9hKYeU2_mj2Y8WVBt9E_alPwYpqT4q1EPyRkNCyHCdsH3osCc4p2pqvAoE3z_-2XQqgv1TZt8TkDay3WNpF8JnaZW1zYt_dZmjpcTfi2n3JX0M3GICpYcoasDJMahBk6G0LbL5m9PQ_K2aTCA2-Cm4Kd8cyxPORQXmmdkRwSzNysjLt_QzY3aNK174olslueSOyX00AxzKObAjLJ8aJuLQ26lOGXOSHqfbJ7cT45VuRqeXj6JoQ7XH4Q88KEU5SpgBeC01IMvNd4HSFnY7enFwBLxVm3m1Qt4NUvd7z9jq673wdSueWebLKHV7XxGJuqHYBKbeX67tVO427kA9p8j_0hH01O6r86Rq-i1G7lryXa4AqeWpT0irEpU1jOru5rNI_UUIx_LSbegSIEaOAFuEaCqgaE0u4sefYKlX2oEPH1uxcfZ_eO4yb_z-FJ-1E8X9OM7t_y539BNQXlVD8dV6T.~lang=py-novice.e"><img src="assets/pong.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui montre une animation typique des jeux vidéo simples.
+<p>Programme qui montre une animation typique des jeux vidéo simples.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fcG9uZy5weQ==~XQAAgADNAwAAAAAAAAARiAbHwZWZKUr9qRCIlSqF_SmZVSZZ01yYHiUVDgvXHH5-Kidy9MB3aQom8q6Yc9RtMAUi2ZdobhuniI-81GucNi0t3cFLMzlMHfwDm-Lq69y7JR6r9xdPSnilog5kyZelqNDUMM7J5cBaZI4RACoi8FmJJoVHV40cs0_Wk0ZIXZ4Q5OkFYdtFmZIqIkbFuKsJ6FtK3AZaTQf4aEoGUgWnyj-5xu9vG2waEOhTTivtvUf0HCgpGZdasrJtUsazdINUzoP7Y4F26UuBAGwNs9oUY6iXBjTPjHForB2II8xQS2kR1bKEtp-yXpdeC6mCTkOrBd1Fc1VSwu_OF5Sn6B-wrBAzmkeopquCr362ES3xuvIBfxvmggKtkyrpsEr8bqMdUQsvurEN4x-glzDfqtHciHNGXYCKoM_ix8u0AtgyetqyNUzVMUneod5e0okbUruFBjYMUx4fWRZF9kKH0jND33V6_MnntVM_v4LQs9TcFHWoDuvId5ZqKlI2sIP8h6RBzTTwbu5-qXLsqPLCKVK9y7QX7aGy4kzXhv1W7oJ5T-O94YHsWypsdfCUTFlzO16Jr6CL7t_66-0lJhaDt-DJLn1eTtALAo6NGWLVB7qSqiOBQ__0PfFB.~lang=py-novice.~hidden=true.e"><img src="assets/pong_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fYnJlYWtvdXQucHk=~XQAAgABhKQAAAAAAAAARiATo2cAE-97gkBkWWs614S0ABDriZ_D5ezLmeYmFyxzDYfQ4rt3n9u_cWLC0FRGpS_BWODlLjoNJn1wpGlslp6E2U3UIzfZSmjPdyvQ7Nx8CLvj8XtpIIt9IV95fsBvNBeQH95NQSUeDYTrWLnhCLqchjzMq_Mq0Rse0dJwbz2tlHcZlTrNLaF3mD8qCPE8KtApwDctiGWfSuptubJqkJC8TR26cFaT9pWauEGIRF_SkGvLw-Zpw-SYR-F84aPKvF0x8oRGUmrB2457RpNIbU2-QpkrqLMWWKecs5quNLTYFq18r5sPdYRPGgkL-EGo2_ew_TK_PbP8-oHyQsfVdWSFbC-dfBr7xq2RYhyNwHlHdn9l5hlHkbEC3vpYWJ20ak8scIMM4o8pT2XqaWLo1R_LEVS6YPLbqC-PaHjDLQ6DHdWKX-8w1YqL0cvaAfKwO-1XtFAKDV45Jor-K1_kZJAii0orGX5h-6c_IeHhAhpKu1XAeTwxPmNqi4KpwDjA5zwGYNCophtFtkYtA6c3nQUL9XJxXgRyAdLcLTeUx9yzZnxqSzCQTC1oW3_Pq4JaavdG1yaqXCUAYzkyNrZzw_C-6OFtKLTo4lc_53nEFZOuWaLnjY7-tYYOjAelpMv7ikp4djfb7Xo9j-IZO2ipl8uva2EpERG_684BhtCDn5girX_aV2yZ-YyhYopMtzeVIbwQqX5xijhOsELC7P-R2VdVyAxfPQ4m30821ANBN5x-NLSa2UkKPGQCouepYqitccYn3smFoZnM04UUqGckljd4s5l9FsJfo-nqU4kEvIUx2hJHzxnv17aArIDN3XVYPEIadsKB4000VlI1ST2-cE0Y6u322GooItzXfzcoxvQovUocrpDfg9oLr-GpKih-L1DPJRA9DWyTDAwYOA-EMMwOjzgXOeW_CQmpgQ54MKRKhJVlL_tcGPP7gm8xvxlZ2DODnSLVF05zitbpAaJYAnXgx8KSErErsgMpPAhc_2YoSXv7a9ZP1Rjdu0QchY4MfwEb77QSKJFc6YgQWZwpZaMfqPadAtk3YP_9lszf_d-hxxVyb759sd6ilvyFl-Bs37h-qMFEUe_6j65zLX8xd6Ymmh00xymuiM-cl1MQRro6CgDs0oHkr5FSodIODSRT-swODF-Me-SE6hy2pKcb7pQCNrPjs3IleipVAWP3U_N6zCqFoGxs2mZSNw_N-iWDQIue8LyVPlCil6XkjIoo4d6ZkVfMsckTBj7QRMBRsQRIQs6_AmJmrNreq1TY-oQvzhZvR5F-TzF_s2sPlv_Bx24G4ITrAJrCzJY7NoMgNxgGtOTla_HI3-hHSVhHb_OyjeexZulIX3kSWNTG2SkilESBoZmEeHNwtAT-ZDgnRadDlcKFds-aoM9vRuzUROjGwAIjD4ih38Zs4vHl4sQAJKRMyOUkdTubWbe0-D-AXppJDfXuQKMa9mueQEToui4dXGJXsZRtHiv5ShnDkNYFilzZ1TvrJshWXQZVY8tsacQGQXtainJS8tDcGMcyJG3acmXexM4C1LPR3RfAg6djioJAlX-zlvBdH4qdOIYUBTzxsJu92myM-FVL0mLOpG6CaJyryZjbYWoY0AI0nign0O5JNV0y9lry8xtvKJ9Si6KpxAUgaaYbwsLTBSZanIyXeXciVGd6jqYbMaUQRH-cf5SJ94i-FQao_cfXK3f3rnl2E_T2Gt4Ex6e8-nVT0CgYBquUVwGZFPian2j5wtI7B86YaoOjxyjKT3KlE1Jk7oVdoIqCdf4T--oLgiBSf6j7-VcmXSSbwp5AC_ekrMjeAW6F_3F3IpPLSaDIm9lUyHgKQ_o3Vvg7t7LNpVBhYnj4pwDu5K1jN5c6xZSyFmesULdWjv7AiPiFCN5r2VUc0FJgprSohXIhejsckNYtruOWwHK-4QJ0p0lC0V2hS1SNSy_mDfQfx5bKHCCkZbHB78PEZaZlkVSP34Z99_TV6aS6OCRiRwyR-3HzfsT7P7nPN3j00YCnuPNJ_KfbTkwohEiwz4uz4s_V5sQenP_7I8GZT31wE7-idkxdWYgud5H-_JySqT4FzyxKiE-wOrgiieURDk5DNcRYB6IWjm89F_CNlD6nYyj_eiadjIctN4EOKniKEblxX9Syfx7mP6h7cNvMWakbefLm0hj5OUWJUXmNuLaqwAjf74Z3Bf3V2dROXneQ1JVoVsZeKC-HmX2k8d3b7R74IJVGzCUHrQLPpgPuJfNfe3VuPW0X_f2rKQ9d__KG7GeMujzgMdBBgDwu7enjZKLTivIMddpuzNY8kvysk4DjB59WxQc4bG4danesOSXppiD2B9uqSumeljB6NkOGNli2u6pEZr16Sfl1pdA3ApHAzbZd02S_iw9oGcV7vhV35F7IQCyERxaVog5LIDnxHa2XQW0V3r9FYtpybsVwZ6K1WL4kiD1WkF68IY1Asah6499m5U5ahyR7TUFz7fthMjBIHLt0zGPT9By4pkKwJ4CeI3wk9CTT-gpukEz3cWySurjQ-wY-2M3m6Xrpc3h5Myg45W3ZraTe1Pyx4r4LJJztYYenm5TT7sOCM-h88KyBd5wjXdd_OEtHrS7BbMDLm3Sn5OwWfPRrHpdldBJbuhQZ93ALEOefePFlSeIoLMbSdb_CUWxj-UMpruD1a0aZvmYxfdjNwDpFH5LQqFMc2K4uuKjZ6oZ5v05HZHL7rcx1lsAr1mjLn-ZtgnNah9QnOteaiyNHGaexQbeYHa0BG2290OG1N8aObo9HsxvkyJ0aHOut9SFsM83joKP5tMtGbcYwULGY5BFx8gfjo9jXY7CKXao7EOYQdGJbHPYNbWDCGo-_2LiBRKtOJvB0CWVi69loxsUOgtzzuj4kER95Fmzgji1vh0oOfy0d3RkWjNB-o3hZBI-Vocvj-dZjJgN6ZCbl9LfGkDOzVlWiMh_Vot5VnwjnSNsdBSbIyXYl3nXi6KxqW00L2k0yQK9UdNB1OFkLULiWk5x6MpBUMaG6mLZw4TV_KTBdOMyapFRPASy1jCne05Sz1T00DU7OTxJ8osfR65uXUv8DxTKmJGRjFE4XyZSTTYJM5W2FPL816_OnRmJAerAYb0JiPo-rxIZNYWDycEc21nY4agFXHWQ7l-C6epWzza5Jl_55OBO4=.~lang=py-novice.e"><img src="assets/breakout.png" style="vertical-align:middle"></img></a>
 </td><td>
-Jeu de breakout.
+<p>Jeu de breakout.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fYnJlYWtvdXQucHk=~XQAAgABhKQAAAAAAAAARiATo2cAE-97gkBkWWs614S0ABDriZ_D5ezLmeYmFyxzDYfQ4rt3n9u_cWLC0FRGpS_BWODlLjoNJn1wpGlslp6E2U3UIzfZSmjPdyvQ7Nx8CLvj8XtpIIt9IV95fsBvNBeQH95NQSUeDYTrWLnhCLqchjzMq_Mq0Rse0dJwbz2tlHcZlTrNLaF3mD8qCPE8KtApwDctiGWfSuptubJqkJC8TR26cFaT9pWauEGIRF_SkGvLw-Zpw-SYR-F84aPKvF0x8oRGUmrB2457RpNIbU2-QpkrqLMWWKecs5quNLTYFq18r5sPdYRPGgkL-EGo2_ew_TK_PbP8-oHyQsfVdWSFbC-dfBr7xq2RYhyNwHlHdn9l5hlHkbEC3vpYWJ20ak8scIMM4o8pT2XqaWLo1R_LEVS6YPLbqC-PaHjDLQ6DHdWKX-8w1YqL0cvaAfKwO-1XtFAKDV45Jor-K1_kZJAii0orGX5h-6c_IeHhAhpKu1XAeTwxPmNqi4KpwDjA5zwGYNCophtFtkYtA6c3nQUL9XJxXgRyAdLcLTeUx9yzZnxqSzCQTC1oW3_Pq4JaavdG1yaqXCUAYzkyNrZzw_C-6OFtKLTo4lc_53nEFZOuWaLnjY7-tYYOjAelpMv7ikp4djfb7Xo9j-IZO2ipl8uva2EpERG_684BhtCDn5girX_aV2yZ-YyhYopMtzeVIbwQqX5xijhOsELC7P-R2VdVyAxfPQ4m30821ANBN5x-NLSa2UkKPGQCouepYqitccYn3smFoZnM04UUqGckljd4s5l9FsJfo-nqU4kEvIUx2hJHzxnv17aArIDN3XVYPEIadsKB4000VlI1ST2-cE0Y6u322GooItzXfzcoxvQovUocrpDfg9oLr-GpKih-L1DPJRA9DWyTDAwYOA-EMMwOjzgXOeW_CQmpgQ54MKRKhJVlL_tcGPP7gm8xvxlZ2DODnSLVF05zitbpAaJYAnXgx8KSErErsgMpPAhc_2YoSXv7a9ZP1Rjdu0QchY4MfwEb77QSKJFc6YgQWZwpZaMfqPadAtk3YP_9lszf_d-hxxVyb759sd6ilvyFl-Bs37h-qMFEUe_6j65zLX8xd6Ymmh00xymuiM-cl1MQRro6CgDs0oHkr5FSodIODSRT-swODF-Me-SE6hy2pKcb7pQCNrPjs3IleipVAWP3U_N6zCqFoGxs2mZSNw_N-iWDQIue8LyVPlCil6XkjIoo4d6ZkVfMsckTBj7QRMBRsQRIQs6_AmJmrNreq1TY-oQvzhZvR5F-TzF_s2sPlv_Bx24G4ITrAJrCzJY7NoMgNxgGtOTla_HI3-hHSVhHb_OyjeexZulIX3kSWNTG2SkilESBoZmEeHNwtAT-ZDgnRadDlcKFds-aoM9vRuzUROjGwAIjD4ih38Zs4vHl4sQAJKRMyOUkdTubWbe0-D-AXppJDfXuQKMa9mueQEToui4dXGJXsZRtHiv5ShnDkNYFilzZ1TvrJshWXQZVY8tsacQGQXtainJS8tDcGMcyJG3acmXexM4C1LPR3RfAg6djioJAlX-zlvBdH4qdOIYUBTzxsJu92myM-FVL0mLOpG6CaJyryZjbYWoY0AI0nign0O5JNV0y9lry8xtvKJ9Si6KpxAUgaaYbwsLTBSZanIyXeXciVGd6jqYbMaUQRH-cf5SJ94i-FQao_cfXK3f3rnl2E_T2Gt4Ex6e8-nVT0CgYBquUVwGZFPian2j5wtI7B86YaoOjxyjKT3KlE1Jk7oVdoIqCdf4T--oLgiBSf6j7-VcmXSSbwp5AC_ekrMjeAW6F_3F3IpPLSaDIm9lUyHgKQ_o3Vvg7t7LNpVBhYnj4pwDu5K1jN5c6xZSyFmesULdWjv7AiPiFCN5r2VUc0FJgprSohXIhejsckNYtruOWwHK-4QJ0p0lC0V2hS1SNSy_mDfQfx5bKHCCkZbHB78PEZaZlkVSP34Z99_TV6aS6OCRiRwyR-3HzfsT7P7nPN3j00YCnuPNJ_KfbTkwohEiwz4uz4s_V5sQenP_7I8GZT31wE7-idkxdWYgud5H-_JySqT4FzyxKiE-wOrgiieURDk5DNcRYB6IWjm89F_CNlD6nYyj_eiadjIctN4EOKniKEblxX9Syfx7mP6h7cNvMWakbefLm0hj5OUWJUXmNuLaqwAjf74Z3Bf3V2dROXneQ1JVoVsZeKC-HmX2k8d3b7R74IJVGzCUHrQLPpgPuJfNfe3VuPW0X_f2rKQ9d__KG7GeMujzgMdBBgDwu7enjZKLTivIMddpuzNY8kvysk4DjB59WxQc4bG4danesOSXppiD2B9uqSumeljB6NkOGNli2u6pEZr16Sfl1pdA3ApHAzbZd02S_iw9oGcV7vhV35F7IQCyERxaVog5LIDnxHa2XQW0V3r9FYtpybsVwZ6K1WL4kiD1WkF68IY1Asah6499m5U5ahyR7TUFz7fthMjBIHLt0zGPT9By4pkKwJ4CeI3wk9CTT-gpukEz3cWySurjQ-wY-2M3m6Xrpc3h5Myg45W3ZraTe1Pyx4r4LJJztYYenm5TT7sOCM-h88KyBd5wjXdd_OEtHrS7BbMDLm3Sn5OwWfPRrHpdldBJbuhQZ93ALEOefePFlSeIoLMbSdb_CUWxj-UMpruD1a0aZvmYxfdjNwDpFH5LQqFMc2K4uuKjZ6oZ5v05HZHL7rcx1lsAr1mjLn-ZtgnNah9QnOteaiyNHGaexQbeYHa0BG2290OG1N8aObo9HsxvkyJ0aHOut9SFsM83joKP5tMtGbcYwULGY5BFx8gfjo9jXY7CKXao7EOYQdGJbHPYNbWDCGo-_2LiBRKtOJvB0CWVi69loxsUOgtzzuj4kER95Fmzgji1vh0oOfy0d3RkWjNB-o3hZBI-Vocvj-dZjJgN6ZCbl9LfGkDOzVlWiMh_Vot5VnwjnSNsdBSbIyXYl3nXi6KxqW00L2k0yQK9UdNB1OFkLULiWk5x6MpBUMaG6mLZw4TV_KTBdOMyapFRPASy1jCne05Sz1T00DU7OTxJ8osfR65uXUv8DxTKmJGRjFE4XyZSTTYJM5W2FPL816_OnRmJAerAYb0JiPo-rxIZNYWDycEc21nY4agFXHWQ7l-C6epWzza5Jl_55OBO4=.~lang=py-novice.~hidden=true.e"><img src="assets/breakout_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <hr>
@@ -274,25 +284,25 @@ Le programme précédent sous forme d'application Web.
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fcG9seV9yZWcucHk=~XQAAgABsAQAAAAAAAAARiAaIocyXjOqgAizitr6Vs4Ah-z5mV2KEJt2q4wYBpWNW4rLqfc-4k3C0nWqGTBiLigh9kvdw_E__2lvEVGvFigG52SNfZqmioji_ekQ-Wp6DVxh29f3zLF3OiKWFGWtfj5iX9MWapA51qz_xT4fw-OOUDSDNxUpCEpjgBUdfgCVOZMYaOZV7TWKiQPlkiFkrS2CWeIt_mRFbFl8pqK5WdsmEI9Afmg6fH5xda9TzMVoeJhDk80PqiPH8VZ5Yn4HwOCqjYGsPT__6saYH.~lang=py-novice.e"><img src="assets/poly_reg.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui dessine des polygones réguliers.
+<p>Programme qui dessine des polygones réguliers.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fcm9zYWNlLnB5~XQAAgACdAgAAAAAAAAARiAUIMiYrPNjcfRwe9i6rxVscW4YZ9-HHLVyWqr_JgTAOig_YwPZwYynpnd5ValglwF8T6JUJq1o0yDU2OmPG5yx4yJeqIMopwvCvcXdjaoHsNAzHih-1CygdWfY1Fn8iSo_ZNdeaKLlxFWicJRrI31IlpJ9O_0mGZvu6WPR54LS8EjjWm8xQ2HP4E0W1G3XUMhCS_xB-INRSi1OyePblAkyjmmWR1kg4D9vyssj1yKLfPq6XWu36HowaCSeIehiqz_PTBC1aPLcGwoQkQ-0Vaj7mSySwJx_TNVmC8WxWG6_hu7yMOOemhFE_cUrqVkzj6-tMn0_kULwhSvlPFnldar655E-T0aCRV5F_uM9JZN3HX89F4LCAw5aKLlYACoqscrwQ3wnnGylYwYOq2AmAqXBksHZZ2Th_gYCoyYolvwfjCQOHx06LaIxcTk_uH9xrtS4meC9n6_cAA1VzkWy_oyS1w5VpDZBmpP1XlwEY7MvmRhIDN4iXd2C9lis3KtnXLx0_Et6E4_lmATyCrGzAThiesYqR21I_hxY4_8_BBBo=.~lang=py-novice.e"><img src="assets/rosace.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui dessine une rosace.
+<p>Programme qui dessine une rosace.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.faG9ybG9nZS5weQ==~XQAAgADdAAAAAAAAAAAzG8qmJ-n9tq3Fyha3c_QocyYvxBvfH44tvTjGTez7Jp6nBCwoC3p1F8mk3CvFtKeW67e5EEDObzKsEJ0VC_RhBWCotgY1K7_wRpzc0PSgI8rgZlmU2d4nCcD-tj8Ur0XoHNG4i_1F6-dA78_84TJN9O4YvLywzJccORIq9yPqtv6goLQEVJxvg_1Iq5LJ-j2Fy-A6JX__098AAA==.~lang=py-novice.e"><img src="assets/horloge.png" style="vertical-align:middle"></img></a>
 </td><td>
-Animation de l'aiguille des secondes d'une horloge.
+<p>Animation de l'aiguille des secondes d'une horloge.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbW91bGlucy5weQ==~XQAAgADjBAAAAAAAAAAyGUj_T3OsN_QHyJo3lfiAxceTObCnSSyJVUzCyhXrQNftO68HQEDafQVVfYyRRJ4b6sq6wQod-B0wgjAbDE3G8mBf03gAGJ86fAExYfNPv3pEmWMWPGW8VHHHdBltizILQ8MX7FDrfBKSugmCNxVcLiAPqBnmnMOUtsDVpdCTL89yDFPGO64KPzm6TiciYQNHkoUOVXAlSmk4_cfD63EgFyLRgaZYoehObxgSLWfCP8DlS_xVb0xT9WYR1F0NdXDqGzwPMb3lWjM2fvK7b5eFCIEqWiT3h9mx92OYPbKBFvQsO0AKP5lTNCgHJ7VLPqj2ERHstmQ7x_BOXNShCKvylRrJfiNXX8Ubghsrgb0AZ65qv0Oc3c8a3cwiSJHGlI7ImcEM4pQh0d84eCyvdgEQpT0dZiSeTi-WbhSR-pujyeAclJrfTILtEX7vyjPJKgrJkVhUe16Qgr5dS8H1tQzpnZa2eh8kqQB2oMsFf-Ad9ldzk0mNk0MJfHbMM7IvFgVDnZCr9Z9qp8U8FjCqPx63r71CO3208wZXkBFzRWbVidtW4MC83hpw2Mey9zX3_TWi-hsSz03QDQhtf3fZxlwlTqzlnJFR-faDIoiTRcb39wLxg7DtlSHtLE_NaN2NXhbGRpR18RTLtPDnUlNct8CH-Hj0ET3u_Q3LvQ==.~lang=py-novice.e"><img src="assets/moulins.png" style="vertical-align:middle"></img></a>
 </td><td>
-Animation de moulins à vent.
+<p>Animation de moulins à vent.</p>
 </td></tr></table>
 
 <hr>
@@ -302,25 +312,25 @@ Animation de moulins à vent.
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fbm90ZXMucHk=~XQAAgADuAAAAAAAAAAARiAToN3W4foLkvW5eAjTD19KbiC1JGdXFUEDNXwI1b4elqUGe-eC0R2jcKKDPnV4XyZzjS-Hys-a0kl_C2JhXfpdApiAWEF-EXp9BZ7FcY3bsihnjxYY_hdjKzcRIXt-btvonOAb0OfI1vLiT49LzHUvHE2Vd0fSxU86sz5KBGm9EX5z9k4O-SJibvm28_vbzLV7MkaBAk4OqVH_mdjOGM6dp4rzT_KhH-KFlVF4c8moo-G0819X_1j6YIA==.~lang=py-novice.e"><img src="assets/notes.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui affiche sous la forme d'un tableur un fichier CSV de notes d'une classe d'étudiants.
+<p>Programme qui affiche sous la forme d'un tableur un fichier CSV de notes d'une classe d'étudiants.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fcG9wdWxhdGlvbi5weQ==~XQAAgAAFAQAAAAAAAAARiAToN3W4foLkvW5eAjTD19KbiC1JGdXFUEDNXwI1b4elqUGe-eC0R2jcKKDPnV4XyZzjS96TMbiKKEQWT0fSfRm83mGhyOeBmYmw_btjBB6mxJyaf-1hVjlDkm_yx1QZcc7dc0mSW6tFyems1MYJFLiuzgR1hwvSUOsk5wHo9Sr0WTPU9r9LghFi94z41Jjh_aw9qtpsqZ8qx2-vwA08AAl1gBzwkgUW-qAJdUU_15LANBYql_xr5wZgrN6t-NCFZxhpJdVvysGIw_oG_6oEgAA=.~lang=py-novice.e"><img src="assets/population.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui affiche sous forme graphique un fichier CSV de la population de la France depuis l'an 0.
+<p>Programme qui affiche sous forme graphique un fichier CSV de la population de la France depuis l'an 0.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZ2VvbG9jLnB5~XQAAgABlBwAAAAAAAAARiAToN3W4foLkvW5eAjTDi9Ff19MoCq5RR5_Y8vZudom4Mae8IABBw9ZgcVy7q_C5Rouo6dJAy5ax58Q1GwZQHtzQJLQKSLBlbRTkkrZ-aMNuOpVunQPfN9_qdupzHza_OV4IbAdakeHYnwPXtuCTimN0mPZD5mGQTiLuT1OEAqIYccIwYjbpWtqTllP26Pelr48cXzDtHV7VmDVxTdlDswoaFygR0g-beo4AEPHpK29uCZPCYu101ShYXPpzChBW9uXzoNEDdIMpPEu6s2aKVXCgNu8VUj-HpGyHQtfFcK5CRUGzkfDCLkRvHYSex5zouABsy7lGVbXfPOUVwWYHuQP9-2J7sd7hYDEgrPrN1ScdUMcSWMxt5B4y0_P8zVcJ9t9hR8TDzcxS_3rMZHBeQNSkdKmh6Q9nLvJRGOpiS-eBwLoaHkEOx1b1Qji1LK_CQ7VaHR_dA1uQrfi0r6L9GhVERLbwjMZ-x5-H_0yfyfsGGAfgHg_mDa_0csfdfMVfd81cE9SziLOaTQocugltWhbabC7d05H3sQlfwPMGEGwBg6LJwOSBlfyVbzz5FTsmirJlO4FrOc3iXe70HJIi8DY-PAWPdTxYHsAKwUAlKkmeW78iUDWcjqecS5NA8-6Oxwz7e_c_CugK5crHoBCPqmg1WD66Vc3ROIQ-74XvVr02fOutBLM2xVMULr2dKkO8Ku7ZdbK4e6FLaLoL42eeGtPC3n8lmljbMY5Y0Qzf0GcHYV9nvKBF6q7VrwsN1Tx2WTNF_t_Od2FYWbKKugjYmM8LZah-Wc2vaVKGk5txJadVfoPpgvy54YZfk1BPx4y3yYYX9L6rgVBquBvPq7WhJVkAqy_W3vKDjxIzR4HCmqFke0N3LWy4Ooc3Az8GW5-bEnDIXeBtSQnHBBePIoGuu3fFL_Tejw1ayPDANiyvPFrLed2bKHtEC_E-VjfQSsnwgFimDTw7zVeZ_3G56psV_yuS3M3L_G_paAo0JXLnJ0I4E2YeQlOBu1o88qtGInjbCPgHGDh0kP4uaGnLXADiuFUds2Oz6x4mmAK9AUDxgeZF_N4yNj3kjFAdcHEHlwrkcuBVH4q6j4O_pse7baEeO74wx3PXIwyNzO6MsqxMDwxx79txz-cAqFaRLwRtJcIWBgxuxGIsUEfyoURT_mVeWA==.~lang=py-novice.e"><img src="assets/geoloc.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui utilise la géolocalisation et une base de données des villes importantes pour afficher la position approximative sur la terre et déterminer la ville la plus proche.
+<p>Programme qui utilise la géolocalisation et une base de données des villes importantes pour afficher la position approximative sur la terre et déterminer la ville la plus proche.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fZWxlbWVudHMucHk=~XQAAgADvBAAAAAAAAAARiAToN3W4foLkvW5eAkfQFQxHECCYRFue-kOa_YkFvROQlyBvtcHiIoYJJP8x1HHm3KuJodfOkW8T7iXLCct8q8f61rn2piQFbJzo4hEWOhDZENt31n6LpdngeKU6tqXvPp9Szcx5B4pRiIZ_oGRrlufD3OmXcU27n127CVlfEhrTqSGOtLM_U4PzZZYF-ycT1XHq4Y23NSnPemccbjHuz_S6OOKUbpchbJCT3BAnBDVmNWPpUQOnMk3m4YF2e6l--_KW3HONxH00lOz6ge_wZrAzkOz3W4itjhE8DW0pDm3aMIFMKY4f5RbplYaO5qnnDPWwzscmFTw_9iicJ85ms7k51-ZehvcuzCgdZlplK1__ccK2aame5arv1DeV8jS142cxyG4i_43J-obY0TFbWbXGAF3-f1Pok1oKkdUlpDxAY3Bdyw-5zU6v1qvsd-X36-Nx9KzPfbMVQ0HrE30x8l_qBa4B608QcE4EbonMENF9rF0UnUKqlYdPsVuPXZ9BlZuMc2G6I3wYD92kd5KkmknQieiGXv-AXWDaEsmXPjrGGZoNOpXuyiebPCuc_3kLMBPrXSpoNF8V70eTq4JF67EZJIinhEGFCc_NfaXdR27CDf03WY2ujchz43nilCQwJzaeC2ybi9yqTc662byVShXgMa0yTbRCxr3kO6bRhWACxDsu5PlGD5YPcaOqlZDyoFQg2VMhioh3XMwjU-68HHYcsi2-ubym3PuJ5lj64PRZDjETs2LII0JaRivm_dhYWKzfea_WIkFZUbl3P0790rZjc5M9T8-xm4grnvu72_I=.~lang=py-novice.e"><img src="assets/elements.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui permet de consulter les propriétés des éléments dans le tableau périodique des éléments en cliquant des boutons.
+<p>Programme qui permet de consulter les propriétés des éléments dans le tableau périodique des éléments en cliquant des boutons.</p>
 </td></tr></table>
 
 <hr>
@@ -330,13 +340,13 @@ Programme qui permet de consulter les propriétés des éléments dans le tablea
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fc2Vuc2V1cnMucHk=~XQAAgACGAwAAAAAAAAARiASoYrfe4LEVIMzZN-xZ4ALz-EBf3AeN64IDYy7iPEfBZwCY5LoI5aDvxB6RgBTJYz-oBr6yQFrtvXtqtLow3VDXN4ZXjDfEkElfFDAz7zJT_J8CzXWWS25ZNKhire8If8RwoKiZTTzpluNIFcMlpfqKW96aua3lWsMqGfAGlIlS1I1t3drfH3nb6sG_q7UV2ydGIZDpDc3e0butr_IzPGWhaOVdGsiltA85x3nO4jBm0OA4bOsoeWT-JjoNa4ooENQ3Zj7quVx1c_eJwH1AXjvQ3gvXamNvDRKHjl-Q1FEN2MIPqgtKxguu6UAY0cIOVRsYLXhWmp9JTvmAIs_25EfzjHnXCCX5_tf37oGp1Y1KHbU6Yy21Ov-7Fve3d2fe-qj0IoDf37i_ZWsxn7KheOxdYwBxAy0BdiHCgtbeLnup4IH7EwLTnEwqUzbEEZg84FQDQArtVMK7dLHxGkIymtTydr15P5TuhDjnmbYvTgaWn8Nm4zLLxAjp9p2FeFsAWBz4L7bwrsoECqoS8JtQF1lqTvv4drHHoddP5rkrqQuwHMgL45WOlC5C63ExQFX4E8ueitfk9gLKNunFeV30FnuPznHPYZKz6y2TyofFjYYMqE-cCVIJVH2t4Rnmg1r6OTTh_lUiLj4zOjgbc3CkhRSBBJ3ON6pjjEFaGCgU8NH_1n5kJg==.~lang=py-novice.e"><img src="assets/senseurs.png" style="vertical-align:middle"></img></a>
 </td><td>
-Programme qui affiche la température en temps-réel obtenue avec un senseur sans-fil « BLINX ».  Les températures et humidités relatives des dernières 5 minutes sont affichées sous forme de tableur et aussi sous forme de graphique.
+<p>Programme qui affiche la température en temps-réel obtenue avec un senseur sans-fil « BLINX ».  Les températures et humidités relatives des dernières 5 minutes sont affichées sous forme de tableur et aussi sous forme de graphique.</p>
 </td></tr></table>
 
 <table><tr><td>
 <a href="https://app.codeboot.org/4.0.0/?init=.fc2Vuc2V1cnMucHk=~XQAAgACGAwAAAAAAAAARiASoYrfe4LEVIMzZN-xZ4ALz-EBf3AeN64IDYy7iPEfBZwCY5LoI5aDvxB6RgBTJYz-oBr6yQFrtvXtqtLow3VDXN4ZXjDfEkElfFDAz7zJT_J8CzXWWS25ZNKhire8If8RwoKiZTTzpluNIFcMlpfqKW96aua3lWsMqGfAGlIlS1I1t3drfH3nb6sG_q7UV2ydGIZDpDc3e0butr_IzPGWhaOVdGsiltA85x3nO4jBm0OA4bOsoeWT-JjoNa4ooENQ3Zj7quVx1c_eJwH1AXjvQ3gvXamNvDRKHjl-Q1FEN2MIPqgtKxguu6UAY0cIOVRsYLXhWmp9JTvmAIs_25EfzjHnXCCX5_tf37oGp1Y1KHbU6Yy21Ov-7Fve3d2fe-qj0IoDf37i_ZWsxn7KheOxdYwBxAy0BdiHCgtbeLnup4IH7EwLTnEwqUzbEEZg84FQDQArtVMK7dLHxGkIymtTydr15P5TuhDjnmbYvTgaWn8Nm4zLLxAjp9p2FeFsAWBz4L7bwrsoECqoS8JtQF1lqTvv4drHHoddP5rkrqQuwHMgL45WOlC5C63ExQFX4E8ueitfk9gLKNunFeV30FnuPznHPYZKz6y2TyofFjYYMqE-cCVIJVH2t4Rnmg1r6OTTh_lUiLj4zOjgbc3CkhRSBBJ3ON6pjjEFaGCgU8NH_1n5kJg==.~lang=py-novice.~hidden=true.e"><img src="assets/senseurs_app_web.png" style="vertical-align:middle"></img></a>
 </td><td>
-Le programme précédent sous forme d'application Web.
+<p>Le programme précédent sous forme d'application Web.</p>
 </td></tr></table>
 
 <hr>
